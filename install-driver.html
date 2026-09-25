@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printer Driver &amp; Software Setup</title>
+  <meta name="description" content="Software setup and driver installation guidance for your printer model on Windows, macOS, and ChromeOS.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main>
+    <div class="container" style="padding-top: var(--space-32); padding-bottom: var(--space-96);">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+        <a href="index.html">Home</a> / <a href="identify-printer.html">Printer Setup</a> / <span id="breadcrumb-model">Selected Printer</span>
+      </nav>
+
+      <!-- 2-COLUMN SOFTWARE WORKSPACE LAYOUT -->
+      <div class="install-workspace-grid">
+        <div class="install-panel">
+          <h1 class="section-title" style="font-size: 2.25rem;">Set up your printer</h1>
+          <h2 class="section-title" id="selected-model-title" style="font-size: 1.75rem; color: var(--color-blue); margin-bottom: var(--space-8);">HP LaserJet Pro M404dn</h2>
+          <p class="section-desc" style="font-size: 1rem;">Recommended setup software package for your detected environment.</p>
+
+          <!-- System & Connection Context Summary Card -->
+          <div class="install-context-card" style="margin-top: 24px; padding: 20px; background: #F7F9FA; border: 1px solid #D9DEE2; border-radius: 4px;">
+            <h3 class="summary-block-title" style="margin-bottom: 12px; font-size: 11px;">SETUP SUMMARY</h3>
+            <div class="summary-meta-grid" style="margin: 0;">
+              <div class="meta-item">
+                <label>Operating system</label>
+                <span id="install-os-span">Windows</span>
+              </div>
+              <div class="meta-item">
+                <label>Device category</label>
+                <span id="install-device-span">Desktop</span>
+              </div>
+              <div class="meta-item">
+                <label>Browser</label>
+                <span id="install-browser-span">Chrome</span>
+              </div>
+              <div class="meta-item">
+                <label>Connection</label>
+                <span id="install-connection-span">Online</span>
+              </div>
+              <div class="meta-item">
+                <label>Network</label>
+                <span id="install-network-span">Unavailable</span>
+              </div>
+              <div class="meta-item">
+                <label>Public IP</label>
+                <span id="install-ip-span">Unavailable</span>
+              </div>
+              <div class="meta-item">
+                <label>Current version</label>
+                <span id="install-current-driver-span">Unavailable</span>
+              </div>
+              <div class="meta-item">
+                <label>Available version</label>
+                <span id="install-available-driver-span" style="color: var(--color-blue); font-weight: 700;">v48.3.4754</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- OS Selector Row -->
+          <div style="margin-top: var(--space-24);">
+            <span style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase;">Selected platform: <strong id="detected-os-label" style="color: var(--color-black);">Windows</strong></span>
+            <div class="os-toggle-row">
+              <button type="button" class="os-btn active" data-os="Windows">Windows</button>
+              <button type="button" class="os-btn" data-os="macOS">macOS</button>
+              <button type="button" class="os-btn" data-os="ChromeOS">ChromeOS</button>
+            </div>
+          </div>
+
+          <!-- Driver Action Box -->
+          <div style="margin-top: var(--space-32); padding-top: var(--space-24); border-top: 1px solid var(--color-border); display: flex; gap: var(--space-16); flex-wrap: wrap;">
+            <button type="button" class="btn-primary-action" id="install-driver-action">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Install Driver
+            </button>
+            <button type="button" class="btn-secondary-action" id="change-printer-btn">Change printer</button>
+          </div>
+
+          <!-- Vertical Timeline Setup Steps -->
+          <div style="margin-top: var(--space-48);">
+            <h3 class="section-title" style="font-size: 1.35rem;">Installation steps</h3>
+            
+            <div class="vertical-timeline">
+              <div class="timeline-step">
+                <span class="timeline-step-num">01</span>
+                <h4 class="timeline-step-title">Download</h4>
+                <p class="timeline-step-desc">Get the recommended printer software package for your OS.</p>
+              </div>
+
+              <div class="timeline-step">
+                <span class="timeline-step-num">02</span>
+                <h4 class="timeline-step-title">Install</h4>
+                <p class="timeline-step-desc">Open the installer file and follow the step-by-step installation wizard.</p>
+              </div>
+
+              <div class="timeline-step">
+                <span class="timeline-step-num">03</span>
+                <h4 class="timeline-step-title">Connect</h4>
+                <p class="timeline-step-desc">Connect your printer via Wi-Fi wireless network or USB cable.</p>
+              </div>
+
+              <div class="timeline-step">
+                <span class="timeline-step-num">04</span>
+                <h4 class="timeline-step-title">Finish</h4>
+                <p class="timeline-step-desc">Complete configuration and print an alignment test page.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="install-workspace-visual">
+          <div class="install-printer-frame">
+            <img src="assets/printer.png" alt="Printer Product Display">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- DRIVER SETUP NOTICE MODAL -->
+  <div class="modal-overlay" id="driver-notice-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-notice-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="close-notice-btn" aria-label="Close modal">&times;</button>
+      <h3 id="modal-notice-title" style="font-size: 1.35rem; font-weight: 500; margin-bottom: var(--space-12);">Setup Instructions Active</h3>
+      <p style="font-size: var(--font-size-base); color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-24);">
+        Setup instructions for <strong id="modal-model-span" style="color: var(--color-blue);">Printer Model</strong> are active. Connect your printer to your computer or Wi-Fi network and follow the 4 installation steps listed on this page.
+      </p>
+      <button type="button" class="btn-primary-action btn-full" id="confirm-notice-btn">Understood, Continue Setup</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/driver-database.js"></script>
+  <script src="js/install-driver.js"></script>
+</body>
+</html>

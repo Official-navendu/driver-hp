@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%">
+  <rect width="540" height="380" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <!-- Installation Section Software Visual -->
+  <rect x="40" y="40" width="460" height="300" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="40" y="40" width="460" height="36" fill="#0F172A"/>
+  <circle cx="65" cy="58" r="5" fill="#EF4444"/>
+  <circle cx="80" cy="58" r="5" fill="#F59E0B"/>
+  <circle cx="95" cy="58" r="5" fill="#10B981"/>
+  <text x="270" y="63" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">HP Printer Drivers &amp; Software Installation</text>
+
+  <!-- Software Installer UI Graphic -->
+  <rect x="80" y="100" width="380" height="200" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="100" y="125" width="220" height="14" rx="2" fill="#0096D6"/>
+  <rect x="100" y="150" width="300" height="8" rx="2" fill="#94A3B8"/>
+  <rect x="100" y="166" width="260" height="8" rx="2" fill="#CBD5E1"/>
+
+  <!-- Step circles preview -->
+  <circle cx="120" cy="210" r="14" fill="#0096D6"/>
+  <text x="120" y="215" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+  <line x1="140" y1="210" x2="190" y2="210" stroke="#0096D6" stroke-width="2"/>
+
+  <circle cx="210" cy="210" r="14" fill="#0096D6"/>
+  <text x="210" y="215" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+  <line x1="230" y1="210" x2="280" y2="210" stroke="#CBD5E1" stroke-width="2"/>
+
+  <circle cx="300" cy="210" r="14" fill="#E2E8F0"/>
+  <text x="300" y="215" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#64748B" text-anchor="middle">3</text>
+  <line x1="320" y1="210" x2="370" y2="210" stroke="#CBD5E1" stroke-width="2"/>
+
+  <circle cx="390" cy="210" r="14" fill="#E2E8F0"/>
+  <text x="390" y="215" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#64748B" text-anchor="middle">4</text>
+
+  <rect x="100" y="250" width="130" height="32" rx="3" fill="#0096D6"/>
+  <text x="165" y="271" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Continue Setup</text>
+</svg>

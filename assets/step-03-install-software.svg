@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <rect width="600" height="360" rx="8" fill="#F5F7F8" stroke="#E5E5E5" stroke-width="1.5"/>
+
+  <!-- Laptop Stand & Body -->
+  <g transform="translate(70, 30)">
+    <!-- Screen Outer Shell -->
+    <rect x="30" y="20" width="400" height="240" rx="10" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+    <!-- Screen Display Area -->
+    <rect x="42" y="32" width="376" height="216" fill="#FFFFFF"/>
+
+    <!-- Software Setup Window Header -->
+    <rect x="42" y="32" width="376" height="36" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <circle cx="62" cy="50" r="11" fill="#0096D6"/>
+    <text x="62" y="54" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="10" fill="#FFFFFF" text-anchor="middle">hp</text>
+    <text x="84" y="55" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="bold" font-size="12" fill="#111111">HP Full Feature Driver &amp; Software Setup</text>
+
+    <!-- Download & Installation Progress Module -->
+    <rect x="70" y="90" width="320" height="130" rx="6" fill="#F5F7F8" stroke="#E5E5E5"/>
+    
+    <!-- Download Icon Circle -->
+    <circle cx="110" cy="140" r="24" fill="#0096D6" fill-opacity="0.12"/>
+    <path d="M 110 126 L 110 148 M 102 140 L 110 148 L 118 140" stroke="#0096D6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Progress Bar -->
+    <text x="150" y="128" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="bold" font-size="13" fill="#111111">Installing Drivers &amp; Utilities...</text>
+    <text x="150" y="146" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#4A4A4A">Downloading full package for Windows / macOS</text>
+    
+    <rect x="150" y="160" width="220" height="12" rx="6" fill="#E2E8F0"/>
+    <rect x="150" y="160" width="165" height="12" rx="6" fill="#0096D6"/>
+    <text x="350" y="171" font-family="monospace" font-weight="bold" font-size="10" fill="#0096D6">75%</text>
+
+    <!-- Laptop Base Keyboard Base -->
+    <path d="M 0 260 L 460 260 L 430 278 L 30 278 Z" fill="#CBD5E1" stroke="#94A3B8"/>
+    <rect x="190" y="264" width="80" height="6" rx="2" fill="#94A3B8"/>
+  </g>
+
+  <!-- Caption Bar -->
+  <rect x="50" y="320" width="500" height="30" rx="4" fill="#F5F7F8" stroke="#E5E5E5"/>
+  <text x="300" y="340" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="12" fill="#4A4A4A" text-anchor="middle">Step 03: Driver Software Package Download &amp; Installation Wizard</text>
+</svg>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Printer | Printer Driver &amp; Setup</title>
+  <meta name="description" content="Enter your printer model number to continue with hardware setup and software installation.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main>
+    <section class="identify-main-section">
+      <div class="container">
+        <!-- Subtle Page Context Line -->
+        <div class="page-context-line">
+          <a href="index.html" style="color: var(--color-blue); text-decoration: none;">HOME</a> / <span class="context-blue">SETUP</span> / IDENTIFY YOUR PRINTER
+        </div>
+
+        <!-- SPLIT-SCREEN IDENTIFICATION AREA -->
+        <div class="identify-split-grid">
+          <!-- LEFT CONTENT AREA (TRANSFORMS IN-PLACE, 52%) -->
+          <div class="identify-left-col">
+            
+            <!-- STATE 1: INITIAL INPUT FORM PANEL -->
+            <div id="initial-form-panel" class="left-panel-state active">
+              <span class="eyebrow">IDENTIFY YOUR PRINTER</span>
+              <h1 class="identify-hero-title">Find your printer</h1>
+              <p class="identify-hero-desc">
+                Enter the model number shown on your printer to continue with setup.
+              </p>
+
+              <form id="identify-form" class="identify-form" novalidate>
+                <label for="printer-model-control" class="identify-label">Printer model number</label>
+                <input 
+                  type="text" 
+                  id="printer-model-control" 
+                  class="identify-input" 
+                  placeholder="HP LaserJet Pro M404dn" 
+                  autocomplete="off"
+                  required
+                >
+                <div class="error-notice" id="error-notice">Please enter your printer model number.</div>
+
+                <button type="submit" class="btn-continue">Continue &rarr;</button>
+              </form>
+
+              <!-- Technical Examples Treatment -->
+              <div class="try-model-row">
+                <span class="try-model-label">Try a model:</span>
+                <div class="try-model-links">
+                  <button type="button" class="model-link-btn" data-model="HP LaserJet Pro M404dn">HP LaserJet Pro M404dn</button>
+                  <span class="dot-separator">&middot;</span>
+                  <button type="button" class="model-link-btn" data-model="HP DeskJet 2820e">HP DeskJet 2820e</button>
+                  <span class="dot-separator">&middot;</span>
+                  <button type="button" class="model-link-btn" data-model="HP OfficeJet Pro 9015e">HP OfficeJet Pro 9015e</button>
+                </div>
+              </div>
+
+              <!-- Compact Model Number Help Row -->
+              <button type="button" class="compact-help-row" id="help-toggle-btn" aria-expanded="false">
+                <svg class="help-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12.01" y2="16"></line><path d="M12 12A2 2 0 0 0 12 8a2 2 0 0 0-2 2"></path></svg>
+                <span>Where can I find my model number?</span>
+                <span class="help-arrow">&rarr;</span>
+              </button>
+
+              <div class="help-reveal-box" id="help-reveal-box">
+                You can usually find the model number printed on the front control panel of your printer, inside the cartridge access door, or on the specification label located on the rear or underside of the printer frame.
+              </div>
+            </div>
+
+            <!-- STATE 2: SEQUENTIAL 5-STEP IN-PLACE SETUP CHECK LOADER PANEL -->
+            <div id="in-place-loader-panel" class="left-panel-state" role="status" aria-live="polite">
+              <span class="eyebrow">SETUP VERIFICATION IN PROGRESS</span>
+              <h2 class="loader-title">Checking printer setup parameters</h2>
+              <p class="loader-desc">Verifying setup options for <strong id="loader-model-name" style="color: var(--color-blue);">Printer Model</strong>...</p>
+
+              <div class="loader-bar-bg">
+                <div class="loader-bar-fill" id="loader-bar-fill"></div>
+              </div>
+
+              <div class="loader-steps-list">
+                <div class="loader-step-row" id="loader-step-1">
+                  <span class="step-mark">01</span>
+                  <span class="step-label">Identify printer &mdash; <small class="step-subtext" id="step-1-subtext">Reading printer model...</small></span>
+                </div>
+                <div class="loader-step-row" id="loader-step-2">
+                  <span class="step-mark">02</span>
+                  <span class="step-label">Check driver &mdash; <small class="step-subtext" id="step-2-subtext">Checking available driver information...</small></span>
+                </div>
+                <div class="loader-step-row" id="loader-step-3">
+                  <span class="step-mark">03</span>
+                  <span class="step-label">Identify system &mdash; <small class="step-subtext" id="step-3-subtext">Identifying operating system &amp; device category...</small></span>
+                </div>
+                <div class="loader-step-row" id="loader-step-4">
+                  <span class="step-mark">04</span>
+                  <span class="step-label">Check connection &mdash; <small class="step-subtext" id="step-4-subtext">Checking network status &amp; public IP...</small></span>
+                </div>
+                <div class="loader-step-row" id="loader-step-5">
+                  <span class="step-mark">05</span>
+                  <span class="step-label">Match setup &mdash; <small class="step-subtext" id="step-5-subtext">Matching printer software with your detected environment...</small></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STATE 3: IN-PLACE REFINED COMPACT SETUP READY PANEL -->
+            <div id="in-place-result-panel" class="left-panel-state">
+              <h2 class="result-heading" id="result-main-heading">Setup ready</h2>
+              <p class="section-subtitle-compact">Your printer setup information is ready.</p>
+
+              <!-- COMPACT 2-COLUMN GRID -->
+              <div class="compact-result-grid">
+                <!-- PRINTER BLOCK -->
+                <div class="summary-block">
+                  <h3 class="summary-block-title">PRINTER</h3>
+                  <div class="block-row"><span class="lbl">Printer</span><span class="val" id="res-printer-name">HP LaserJet Pro M404dn</span></div>
+                  <div class="block-row"><span class="lbl">Model</span><span class="val" id="res-model-code">W1A53A</span></div>
+                  <div class="block-row"><span class="lbl">Driver package</span><span class="val text-blue" id="res-printer-driver-status">Available</span></div>
+                </div>
+
+                <!-- SYSTEM BLOCK -->
+                <div class="summary-block">
+                  <h3 class="summary-block-title">SYSTEM</h3>
+                  <div class="block-row"><span class="lbl">Operating system</span><span class="val" id="res-os">Windows</span></div>
+                  <div class="block-row"><span class="lbl">Device</span><span class="val" id="res-device">Desktop</span></div>
+                  <div class="block-row"><span class="lbl">Browser</span><span class="val" id="res-browser">Chrome</span></div>
+                </div>
+
+                <!-- NETWORK BLOCK -->
+                <div class="summary-block">
+                  <h3 class="summary-block-title">NETWORK</h3>
+                  <div class="block-row"><span class="lbl">Connection</span><span class="val" id="res-connection">Online</span></div>
+                  <div class="block-row"><span class="lbl">Network</span><span class="val" id="res-network-type">Unavailable</span></div>
+                  <div class="block-row">
+                    <span class="lbl">Public IP</span>
+                    <span class="val ip-row">
+                      <span id="res-public-ip-truncated">Unavailable</span>
+                      <button type="button" class="btn-copy-link" id="copy-ip-btn" title="Copy Public IP">Copy</button>
+                    </span>
+                  </div>
+                  <div style="margin-top: 6px;">
+                    <button type="button" class="btn-text-link" id="open-network-drawer-btn">Network details &rarr;</button>
+                  </div>
+                </div>
+
+                <!-- DRIVER BLOCK -->
+                <div class="summary-block">
+                  <h3 class="summary-block-title">DRIVER</h3>
+                  <div class="block-row"><span class="lbl">Current version</span><span class="val" id="res-current-driver-ver">Unavailable</span></div>
+                  <div class="block-row"><span class="lbl">Available version</span><span class="val text-blue" id="res-available-driver-ver">v48.3.4754</span></div>
+                  <div class="block-row"><span class="lbl">Driver status</span><span class="val text-blue" id="res-driver-status-badge">Package available</span></div>
+                  <div style="margin-top: 6px;">
+                    <button type="button" class="btn-text-link" id="open-driver-drawer-btn">Driver details &rarr;</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- HORIZONTAL DRIVER COMPARISON STRIP -->
+              <div class="driver-compare-horizontal">
+                <div class="cmp-box">
+                  <span class="cmp-lbl">CURRENT</span>
+                  <span class="cmp-val text-muted" id="res-cmp-current">Unavailable</span>
+                </div>
+                <div class="cmp-arrow">&rarr;</div>
+                <div class="cmp-box highlight-blue">
+                  <span class="cmp-lbl">AVAILABLE</span>
+                  <span class="cmp-val text-blue" id="res-cmp-available">v48.3.4754</span>
+                </div>
+                <div class="cmp-arrow">&rarr;</div>
+                <div class="cmp-box highlight-blue">
+                  <span class="cmp-lbl">STATUS</span>
+                  <span class="cmp-val text-bold" id="res-cmp-status">PACKAGE AVAILABLE</span>
+                </div>
+              </div>
+
+              <!-- COMPACT METADATA LINE -->
+              <div class="compact-meta-line">
+                <span>Release: <strong id="res-meta-release">Oct 14, 2024</strong></span>
+                <span class="dot">&middot;</span>
+                <span>Package: <strong id="res-meta-size">104.2 MB</strong></span>
+                <span class="dot">&middot;</span>
+                <span>Type: <strong id="res-meta-type">Full Software Solution</strong></span>
+              </div>
+
+              <!-- MAIN ACTIONS ROW -->
+              <div class="result-actions-row">
+                <button type="button" class="btn-primary-action" id="update-driver-btn">Continue to driver setup &rarr;</button>
+                <button type="button" class="btn-secondary-action" id="change-printer-btn">Change printer</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE — PREMIUM PRODUCT PRESENTATION STAGE (48%) -->
+          <div class="identify-right-col">
+            <div class="product-stage-container">
+              <div class="stage-stripe-accent"></div>
+              <img src="assets/printer.png" alt="Printer Product Stage Visual" class="stage-printer-image">
+              <div class="stage-floor-shadow"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 1. FULL DRIVER DETAILS SLIDE-OVER DRAWER (420–520px) -->
+  <div class="drawer-overlay" id="driver-details-drawer" aria-hidden="true" role="dialog" aria-labelledby="driver-drawer-title">
+    <div class="drawer-card">
+      <div class="drawer-header">
+        <div>
+          <h3 id="driver-drawer-title" class="drawer-title">DRIVER DETAILS</h3>
+          <p id="driver-drawer-subtitle" class="drawer-subtitle">Package information for selected printer</p>
+        </div>
+        <button type="button" class="drawer-close" id="close-driver-drawer-btn" aria-label="Close drawer">&times;</button>
+      </div>
+
+      <div class="drawer-body">
+        <!-- KEY METADATA GRID -->
+        <div class="drawer-meta-grid">
+          <div class="meta-item"><label>PRINTER</label><span id="drw-model">HP LaserJet Pro M404dn</span></div>
+          <div class="meta-item"><label>MODEL</label><span id="drw-model-code">W1A53A</span></div>
+          <div class="meta-item"><label>AVAILABLE VERSION</label><span id="drw-version" style="color: var(--color-blue); font-weight: 700;">v48.3.4754</span></div>
+          <div class="meta-item"><label>RELEASE DATE</label><span id="drw-release-date">Oct 14, 2024</span></div>
+          <div class="meta-item"><label>PACKAGE</label><span id="drw-title">HP LaserJet Full Software Solution</span></div>
+          <div class="meta-item"><label>PACKAGE SIZE</label><span id="drw-package-size">104.2 MB</span></div>
+          <div class="meta-item"><label>SUPPORTED SYSTEM</label><span id="drw-supported-os">Windows</span></div>
+          <div class="meta-item"><label>PACKAGE TYPE</label><span id="drw-package-type">Full Software Solution</span></div>
+        </div>
+
+        <div class="drawer-section">
+          <h4 class="drawer-section-title">WHAT'S INCLUDED</h4>
+          <div class="components-numbered-list" id="drw-components-list">
+            <!-- Dynamic 01-05 components list -->
+          </div>
+        </div>
+
+        <div class="drawer-section">
+          <h4 class="drawer-section-title">RELEASE NOTES</h4>
+          <ul class="notes-details-list" id="drw-release-notes-list">
+            <!-- Dynamic release notes -->
+          </ul>
+        </div>
+
+        <div class="drawer-section">
+          <h4 class="drawer-section-title">INSTALLATION NOTES</h4>
+          <ul class="notes-details-list" id="drw-install-notes-list">
+            <!-- Dynamic installation notes -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="drawer-footer">
+        <button type="button" class="btn-primary-action" id="drawer-update-btn">Continue to driver setup &rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. NETWORK DETAILS SLIDE-OVER DRAWER (420–520px) -->
+  <div class="drawer-overlay" id="network-details-drawer" aria-hidden="true" role="dialog" aria-labelledby="network-drawer-title">
+    <div class="drawer-card">
+      <div class="drawer-header">
+        <div>
+          <h3 id="network-drawer-title" class="drawer-title">NETWORK DETAILS</h3>
+          <p class="drawer-subtitle">Detected network environment</p>
+        </div>
+        <button type="button" class="drawer-close" id="close-network-drawer-btn" aria-label="Close drawer">&times;</button>
+      </div>
+
+      <div class="drawer-body">
+        <div class="drawer-meta-grid">
+          <div class="meta-item"><label>CONNECTION</label><span id="net-drw-connection">Online</span></div>
+          <div class="meta-item"><label>NETWORK</label><span id="net-drw-type">Unavailable</span></div>
+          <div class="meta-item" style="grid-column: span 2;">
+            <label>PUBLIC IP</label>
+            <span id="net-drw-ip-full" style="word-break: break-all; color: var(--color-blue); font-weight: 700;">Unavailable</span>
+            <div style="margin-top: 6px;">
+              <button type="button" class="btn-copy-link" id="net-drw-copy-ip-btn">Copy</button>
+            </div>
+          </div>
+          <div class="meta-item"><label>CONNECTION QUALITY</label><span id="net-drw-effective">Unavailable</span></div>
+          <div class="meta-item"><label>LATENCY</label><span id="net-drw-rtt">Unavailable</span></div>
+          <div class="meta-item"><label>DOWNLOAD SPEED</label><span id="net-drw-downlink">Unavailable</span></div>
+        </div>
+      </div>
+
+      <div class="drawer-footer">
+        <button type="button" class="btn-secondary-action" id="close-net-drw-action" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/driver-database.js"></script>
+  <script src="js/identify-printer.js"></script>
+</body>
+</html>
