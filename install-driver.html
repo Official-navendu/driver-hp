@@ -3,138 +3,347 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Printer Driver &amp; Software Setup</title>
-  <meta name="description" content="Software setup and driver installation guidance for your printer model on Windows, macOS, and ChromeOS.">
+  <title>Installing Printer Software | Printer Driver &amp; Setup</title>
+  <meta name="description" content="Dedicated printer software installation setup utility.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/printer-favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/printer-favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/printer-favicon-180.png">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #F7F9FA;
+      color: #111111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+    .install-wrapper {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 20px;
+      box-sizing: border-box;
+    }
+    .install-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #E2E8F0;
+      margin-bottom: 24px;
+    }
+    .brand-logo-img {
+      height: 30px;
+      max-width: 100px;
+      object-fit: contain;
+    }
+    .session-badge {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--color-blue);
+      text-transform: uppercase;
+      background: #EBF8FF;
+      border: 1px solid #BEE3F8;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    .install-hero-block {
+      margin-bottom: 24px;
+    }
+    .install-hero-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #111111;
+      margin: 0 0 6px 0;
+      line-height: 1.25;
+    }
+    .install-hero-desc {
+      font-size: 0.9rem;
+      color: #555555;
+      margin: 0;
+      line-height: 1.45;
+    }
+    .summary-strip-card {
+      background: #FFFFFF;
+      border: 1px solid #DDE3E7;
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      align-items: center;
+    }
+    .summary-label {
+      display: block;
+      font-size: 10px;
+      color: #777777;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      margin-bottom: 3px;
+    }
+    .summary-value {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: #111111;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      display: block;
+    }
+    .workspace-card {
+      background: #FFFFFF;
+      border: 1px solid #DDE3E7;
+      border-radius: 4px;
+      padding: 28px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .timeline-container {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      position: relative;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #F0F4F8;
+    }
+    .timeline-step {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: relative;
+    }
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .step-num-badge {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #F0F4F8;
+      color: #666666;
+      font-weight: 700;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #DDE3E7;
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+    .step-status {
+      font-size: 0.75rem;
+      color: #777777;
+      font-weight: 600;
+    }
+    .step-title {
+      margin: 0;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #111111;
+    }
+    .active-progress-box {
+      background: #F7F9FA;
+      border: 1px solid #E2E8F0;
+      border-radius: 4px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .progress-box-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .progress-eyebrow {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--color-blue);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .progress-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #111111;
+      margin: 0;
+    }
+    .pct-counter {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--color-blue);
+      font-family: monospace;
+    }
+    .progress-bar-bg {
+      width: 100%;
+      height: 8px;
+      background: #EAEFF2;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .progress-bar-fill {
+      width: 0%;
+      height: 100%;
+      background: var(--color-blue);
+      transition: width 0.4s ease;
+      border-radius: 4px;
+    }
+    .meta-footer-line {
+      display: flex;
+      gap: 24px;
+      font-size: 0.8rem;
+      color: #666666;
+      border-top: 1px solid #F0F4F8;
+      padding-top: 16px;
+      flex-wrap: wrap;
+    }
+    .meta-footer-item span {
+      font-weight: 600;
+      color: #333333;
+    }
+    @media (max-width: 768px) {
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .timeline-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <main>
-    <div class="container" style="padding-top: var(--space-32); padding-bottom: var(--space-96);">
-      <!-- Breadcrumbs -->
-      <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-        <a href="index.html">Home</a> / <a href="identify-printer.html">Printer Setup</a> / <span id="breadcrumb-model">Selected Printer</span>
-      </nav>
+  <div class="install-wrapper">
+    
+    <!-- TOP BRAND AREA (NO HEADER, NO NAVIGATION) -->
+    <div class="install-top-bar">
+      <a href="index.html" style="display: inline-block;">
+        <img src="assets/logo.png" alt="Printer Setup Portal" class="brand-logo-img">
+      </a>
+      <span class="session-badge">PRINTER SETUP</span>
+    </div>
 
-      <!-- 2-COLUMN SOFTWARE WORKSPACE LAYOUT -->
-      <div class="install-workspace-grid">
-        <div class="install-panel">
-          <h1 class="section-title" style="font-size: 2.25rem;">Set up your printer</h1>
-          <h2 class="section-title" id="selected-model-title" style="font-size: 1.75rem; color: var(--color-blue); margin-bottom: var(--space-8);">HP LaserJet Pro M404dn</h2>
-          <p class="section-desc" style="font-size: 1rem;">Recommended setup software package for your detected environment.</p>
+    <!-- PRIMARY INSTALLATION HEADER -->
+    <div class="install-hero-block">
+      <h1 class="install-hero-title">Installing your printer software</h1>
+      <p class="install-hero-desc">Your printer setup package is being prepared and installed. Keep this page open until the installation process is complete.</p>
+    </div>
 
-          <!-- System & Connection Context Summary Card -->
-          <div class="install-context-card" style="margin-top: 24px; padding: 20px; background: #F7F9FA; border: 1px solid #D9DEE2; border-radius: 4px;">
-            <h3 class="summary-block-title" style="margin-bottom: 12px; font-size: 11px;">SETUP SUMMARY</h3>
-            <div class="summary-meta-grid" style="margin: 0;">
-              <div class="meta-item">
-                <label>Operating system</label>
-                <span id="install-os-span">Windows</span>
-              </div>
-              <div class="meta-item">
-                <label>Device category</label>
-                <span id="install-device-span">Desktop</span>
-              </div>
-              <div class="meta-item">
-                <label>Browser</label>
-                <span id="install-browser-span">Chrome</span>
-              </div>
-              <div class="meta-item">
-                <label>Connection</label>
-                <span id="install-connection-span">Online</span>
-              </div>
-              <div class="meta-item">
-                <label>Network</label>
-                <span id="install-network-span">Unavailable</span>
-              </div>
-              <div class="meta-item">
-                <label>Public IP</label>
-                <span id="install-ip-span">Unavailable</span>
-              </div>
-              <div class="meta-item">
-                <label>Current version</label>
-                <span id="install-current-driver-span">Unavailable</span>
-              </div>
-              <div class="meta-item">
-                <label>Available version</label>
-                <span id="install-available-driver-span" style="color: var(--color-blue); font-weight: 700;">v48.3.4754</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- OS Selector Row -->
-          <div style="margin-top: var(--space-24);">
-            <span style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase;">Selected platform: <strong id="detected-os-label" style="color: var(--color-black);">Windows</strong></span>
-            <div class="os-toggle-row">
-              <button type="button" class="os-btn active" data-os="Windows">Windows</button>
-              <button type="button" class="os-btn" data-os="macOS">macOS</button>
-              <button type="button" class="os-btn" data-os="ChromeOS">ChromeOS</button>
-            </div>
-          </div>
-
-          <!-- Driver Action Box -->
-          <div style="margin-top: var(--space-32); padding-top: var(--space-24); border-top: 1px solid var(--color-border); display: flex; gap: var(--space-16); flex-wrap: wrap;">
-            <button type="button" class="btn-primary-action" id="install-driver-action">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              Install Driver
-            </button>
-            <button type="button" class="btn-secondary-action" id="change-printer-btn">Change printer</button>
-          </div>
-
-          <!-- Vertical Timeline Setup Steps -->
-          <div style="margin-top: var(--space-48);">
-            <h3 class="section-title" style="font-size: 1.35rem;">Installation steps</h3>
-            
-            <div class="vertical-timeline">
-              <div class="timeline-step">
-                <span class="timeline-step-num">01</span>
-                <h4 class="timeline-step-title">Download</h4>
-                <p class="timeline-step-desc">Get the recommended printer software package for your OS.</p>
-              </div>
-
-              <div class="timeline-step">
-                <span class="timeline-step-num">02</span>
-                <h4 class="timeline-step-title">Install</h4>
-                <p class="timeline-step-desc">Open the installer file and follow the step-by-step installation wizard.</p>
-              </div>
-
-              <div class="timeline-step">
-                <span class="timeline-step-num">03</span>
-                <h4 class="timeline-step-title">Connect</h4>
-                <p class="timeline-step-desc">Connect your printer via Wi-Fi wireless network or USB cable.</p>
-              </div>
-
-              <div class="timeline-step">
-                <span class="timeline-step-num">04</span>
-                <h4 class="timeline-step-title">Finish</h4>
-                <p class="timeline-step-desc">Complete configuration and print an alignment test page.</p>
-              </div>
-            </div>
-          </div>
+    <!-- SETUP SUMMARY (4-Column Technical Strip) -->
+    <div class="summary-strip-card">
+      <div class="summary-grid">
+        <div>
+          <span class="summary-label">PRINTER</span>
+          <span id="sum-printer-model" class="summary-value">HP LaserJet Pro M404dn</span>
         </div>
-
-        <div class="install-workspace-visual">
-          <div class="install-printer-frame">
-            <img src="assets/printer.png" alt="Printer Product Display">
-          </div>
+        <div>
+          <span class="summary-label">DRIVER VERSION</span>
+          <span id="sum-driver-version" class="summary-value" style="color: var(--color-blue);">v48.3.4754</span>
+        </div>
+        <div>
+          <span class="summary-label">PUBLIC IP</span>
+          <span id="sum-public-ip" class="summary-value">Protected</span>
+        </div>
+        <div>
+          <span class="summary-label">CONNECTION</span>
+          <span id="sum-connection" class="summary-value">Online</span>
         </div>
       </div>
     </div>
-  </main>
 
-  <!-- DRIVER SETUP NOTICE MODAL -->
-  <div class="modal-overlay" id="driver-notice-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-notice-title">
-    <div class="modal-card">
-      <button type="button" class="modal-close" id="close-notice-btn" aria-label="Close modal">&times;</button>
-      <h3 id="modal-notice-title" style="font-size: 1.35rem; font-weight: 500; margin-bottom: var(--space-12);">Setup Instructions Active</h3>
-      <p style="font-size: var(--font-size-base); color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-24);">
-        Setup instructions for <strong id="modal-model-span" style="color: var(--color-blue);">Printer Model</strong> are active. Connect your printer to your computer or Wi-Fi network and follow the 4 installation steps listed on this page.
-      </p>
-      <button type="button" class="btn-primary-action btn-full" id="confirm-notice-btn">Understood, Continue Setup</button>
+    <!-- MAIN INSTALLATION WORKSPACE -->
+    <div class="workspace-card">
+      
+      <!-- 5-STAGE INSTALLATION TIMELINE -->
+      <div class="timeline-container">
+        
+        <!-- Step 01 -->
+        <div id="step-01" class="timeline-step">
+          <div class="step-header">
+            <div class="step-num-badge">01</div>
+            <span id="step-01-status" class="step-status">Pending</span>
+          </div>
+          <h4 class="step-title">Preparing setup</h4>
+        </div>
+
+        <!-- Step 02 -->
+        <div id="step-02" class="timeline-step">
+          <div class="step-header">
+            <div class="step-num-badge">02</div>
+            <span id="step-02-status" class="step-status">Pending</span>
+          </div>
+          <h4 class="step-title">Checking printer package</h4>
+        </div>
+
+        <!-- Step 03 -->
+        <div id="step-03" class="timeline-step">
+          <div class="step-header">
+            <div class="step-num-badge">03</div>
+            <span id="step-03-status" class="step-status">Pending</span>
+          </div>
+          <h4 class="step-title">Configuration</h4>
+        </div>
+
+        <!-- Step 04 -->
+        <div id="step-04" class="timeline-step">
+          <div class="step-header">
+            <div class="step-num-badge">04</div>
+            <span id="step-04-status" class="step-status">Pending</span>
+          </div>
+          <h4 class="step-title">Unpacking</h4>
+        </div>
+
+        <!-- Step 05 -->
+        <div id="step-05" class="timeline-step">
+          <div class="step-header">
+            <div class="step-num-badge">05</div>
+            <span id="step-05-status" class="step-status">Pending</span>
+          </div>
+          <h4 class="step-title">Installation</h4>
+        </div>
+
+      </div>
+
+      <!-- ACTIVE STAGE PROGRESS BOX -->
+      <div class="active-progress-box">
+        <div class="progress-box-header">
+          <div>
+            <span class="progress-eyebrow">INSTALLATION</span>
+            <h3 class="progress-title" id="step-05-desc">Preparing installation...</h3>
+          </div>
+          <div id="install-pct-val" class="pct-counter">0%</div>
+        </div>
+
+        <div class="progress-bar-bg">
+          <div id="step-progress-fill" class="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- MICRO TECHNICAL METADATA -->
+      <div class="meta-footer-line">
+        <div class="meta-footer-item">Setup Session: <span>Active</span></div>
+        <div class="meta-footer-item">Status: <span>Installation in progress</span></div>
+      </div>
+
     </div>
+
   </div>
 
-  <script src="js/main.js"></script>
   <script src="js/driver-database.js"></script>
   <script src="js/install-driver.js"></script>
 </body>

@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find Your Printer | Printer Driver &amp; Setup</title>
   <meta name="description" content="Enter your printer model number to continue with hardware setup and software installation.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/printer-favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/printer-favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/printer-favicon-180.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,6 +16,11 @@
   <main>
     <section class="identify-main-section">
       <div class="container">
+        <!-- TOP BRAND MARK (NO HEADER, NO NAVIGATION) -->
+        <div class="identify-brand-mark" style="margin-bottom: 16px;">
+          <a href="index.html" style="display: inline-block;"><img src="assets/logo.png" alt="Printer Setup Portal" style="height: 32px; max-width: 120px; object-fit: contain;"></a>
+        </div>
+
         <!-- Subtle Page Context Line -->
         <div class="page-context-line">
           <a href="index.html" style="color: var(--color-blue); text-decoration: none;">HOME</a> / <span class="context-blue">SETUP</span> / IDENTIFY YOUR PRINTER
@@ -105,7 +114,10 @@
 
             <!-- STATE 3: IN-PLACE REFINED COMPACT SETUP READY PANEL -->
             <div id="in-place-result-panel" class="left-panel-state">
-              <h2 class="result-heading" id="result-main-heading">Setup ready</h2>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <h2 class="result-heading" id="result-main-heading" style="margin: 0;">Setup ready</h2>
+                <span style="font-size: 0.8rem; font-weight: 600; color: #059669; background: #ECFDF5; padding: 2px 8px; border-radius: 12px;">● Setup information ready</span>
+              </div>
               <p class="section-subtitle-compact">Your printer setup information is ready.</p>
 
               <!-- COMPACT 2-COLUMN GRID -->
@@ -115,7 +127,7 @@
                   <h3 class="summary-block-title">PRINTER</h3>
                   <div class="block-row"><span class="lbl">Printer</span><span class="val" id="res-printer-name">HP LaserJet Pro M404dn</span></div>
                   <div class="block-row"><span class="lbl">Model</span><span class="val" id="res-model-code">W1A53A</span></div>
-                  <div class="block-row"><span class="lbl">Driver package</span><span class="val text-blue" id="res-printer-driver-status">Available</span></div>
+                  <div class="block-row"><span class="lbl">Driver package</span><span class="val text-blue" id="res-printer-driver-status">Ready to install</span></div>
                 </div>
 
                 <!-- SYSTEM BLOCK -->
@@ -130,11 +142,11 @@
                 <div class="summary-block">
                   <h3 class="summary-block-title">NETWORK</h3>
                   <div class="block-row"><span class="lbl">Connection</span><span class="val" id="res-connection">Online</span></div>
-                  <div class="block-row"><span class="lbl">Network</span><span class="val" id="res-network-type">Unavailable</span></div>
+                  <div class="block-row"><span class="lbl">Network</span><span class="val" id="res-network-type">Connected</span></div>
                   <div class="block-row">
                     <span class="lbl">Public IP</span>
                     <span class="val ip-row">
-                      <span id="res-public-ip-truncated">Unavailable</span>
+                      <span id="res-public-ip-truncated">Protected</span>
                       <button type="button" class="btn-copy-link" id="copy-ip-btn" title="Copy Public IP">Copy</button>
                     </span>
                   </div>
@@ -146,9 +158,9 @@
                 <!-- DRIVER BLOCK -->
                 <div class="summary-block">
                   <h3 class="summary-block-title">DRIVER</h3>
-                  <div class="block-row"><span class="lbl">Current version</span><span class="val" id="res-current-driver-ver">Unavailable</span></div>
+                  <div class="block-row"><span class="lbl">Current version</span><span class="val" id="res-current-driver-ver">Not yet checked</span></div>
                   <div class="block-row"><span class="lbl">Available version</span><span class="val text-blue" id="res-available-driver-ver">v48.3.4754</span></div>
-                  <div class="block-row"><span class="lbl">Driver status</span><span class="val text-blue" id="res-driver-status-badge">Package available</span></div>
+                  <div class="block-row"><span class="lbl">Driver status</span><span class="val text-blue" id="res-driver-status-badge">READY TO INSTALL</span></div>
                   <div style="margin-top: 6px;">
                     <button type="button" class="btn-text-link" id="open-driver-drawer-btn">Driver details &rarr;</button>
                   </div>
@@ -159,7 +171,7 @@
               <div class="driver-compare-horizontal">
                 <div class="cmp-box">
                   <span class="cmp-lbl">CURRENT</span>
-                  <span class="cmp-val text-muted" id="res-cmp-current">Unavailable</span>
+                  <span class="cmp-val text-muted" id="res-cmp-current">Not yet checked</span>
                 </div>
                 <div class="cmp-arrow">&rarr;</div>
                 <div class="cmp-box highlight-blue">
@@ -169,7 +181,7 @@
                 <div class="cmp-arrow">&rarr;</div>
                 <div class="cmp-box highlight-blue">
                   <span class="cmp-lbl">STATUS</span>
-                  <span class="cmp-val text-bold" id="res-cmp-status">PACKAGE AVAILABLE</span>
+                  <span class="cmp-val text-bold" id="res-cmp-status">READY TO INSTALL</span>
                 </div>
               </div>
 
@@ -271,17 +283,17 @@
       <div class="drawer-body">
         <div class="drawer-meta-grid">
           <div class="meta-item"><label>CONNECTION</label><span id="net-drw-connection">Online</span></div>
-          <div class="meta-item"><label>NETWORK</label><span id="net-drw-type">Unavailable</span></div>
+          <div class="meta-item"><label>NETWORK</label><span id="net-drw-type">Connected</span></div>
           <div class="meta-item" style="grid-column: span 2;">
             <label>PUBLIC IP</label>
-            <span id="net-drw-ip-full" style="word-break: break-all; color: var(--color-blue); font-weight: 700;">Unavailable</span>
+            <span id="net-drw-ip-full" style="word-break: break-all; color: var(--color-blue); font-weight: 700;">Protected</span>
             <div style="margin-top: 6px;">
               <button type="button" class="btn-copy-link" id="net-drw-copy-ip-btn">Copy</button>
             </div>
           </div>
-          <div class="meta-item"><label>CONNECTION QUALITY</label><span id="net-drw-effective">Unavailable</span></div>
-          <div class="meta-item"><label>LATENCY</label><span id="net-drw-rtt">Unavailable</span></div>
-          <div class="meta-item"><label>DOWNLOAD SPEED</label><span id="net-drw-downlink">Unavailable</span></div>
+          <div class="meta-item"><label>CONNECTION QUALITY</label><span id="net-drw-effective">Standard connection</span></div>
+          <div class="meta-item"><label>LATENCY</label><span id="net-drw-rtt">Not measured</span></div>
+          <div class="meta-item"><label>DOWNLOAD SPEED</label><span id="net-drw-downlink">Not measured</span></div>
         </div>
       </div>
 

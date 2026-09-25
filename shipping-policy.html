@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping Policy | Printer Setup</title>
+  <meta name="description" content="Shipping &amp; Delivery Policy for PrinterSetupExperts. Learn about order processing, shipping methods, and delivery terms.">
+  <meta name="robots" content="index, follow">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/printer-favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/printer-favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/printer-favicon-180.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .policy-layout-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 36px;
+      align-items: start;
+      padding: 32px 0 64px 0;
+    }
+    .policy-sidebar {
+      position: sticky;
+      top: 90px;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 6px;
+      padding: 16px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+    .toc-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #777777;
+      margin: 0 0 12px 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #F0F4F8;
+    }
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .toc-link {
+      font-size: 0.8rem;
+      color: #555555;
+      text-decoration: none;
+      display: block;
+      padding: 4px 6px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .toc-link:hover {
+      color: var(--color-blue);
+      background: #F7F9FA;
+    }
+    .policy-content-body {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 6px;
+      padding: 36px 40px;
+      line-height: 1.6;
+      color: #2D3748;
+    }
+    .policy-content-body h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #111111;
+      margin: 32px 0 12px 0;
+      padding-top: 20px;
+      border-top: 1px solid #F0F4F8;
+    }
+    .policy-content-body h2:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    .policy-content-body p {
+      margin: 0 0 16px 0;
+      font-size: 0.95rem;
+    }
+    .policy-content-body ul {
+      margin: 0 0 16px 0;
+      padding-left: 20px;
+    }
+    .policy-content-body li {
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 860px) {
+      .policy-layout-grid {
+        grid-template-columns: 1fr;
+      }
+      .policy-sidebar {
+        display: none;
+      }
+      .policy-content-body {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Printer Setup Portal Home">
+        <img src="assets/logo.png" alt="Printer Setup Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="identify-printer.html" class="nav-link">Setup</a>
+        <a href="index.html#setup-guide" class="nav-link">Guide</a>
+        <a href="index.html#fix-guide" class="nav-link">Fix</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="identify-printer.html" class="btn btn-primary header-cta-desktop">Identify your printer &rarr;</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-nav-menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav-menu">
+      <a href="identify-printer.html" class="nav-link">Setup</a>
+      <a href="index.html#setup-guide" class="nav-link">Guide</a>
+      <a href="index.html#fix-guide" class="nav-link">Fix</a>
+      <a href="identify-printer.html" class="btn btn-primary btn-full" style="margin-top: 1rem;">Identify your printer &rarr;</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="policy-hero-section" style="background: #F7F9FA; padding: 40px 0; border-bottom: 1px solid #E2E8F0;">
+      <div class="container">
+        <span class="policy-eyebrow" style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--color-blue); text-transform: uppercase;">LEGAL / INFORMATION</span>
+        <h1 class="policy-page-title" style="font-size: 2.25rem; font-weight: 700; color: #111111; margin: 8px 0;">Shipping &amp; Delivery Policy</h1>
+        <div style="font-size: 0.875rem; color: #666666;">
+          <span>Effective Date: April 24, 2026</span> &middot; <span>Last Updated: April 24, 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container policy-layout-grid">
+      
+      <!-- TABLE OF CONTENTS -->
+      <aside class="policy-sidebar">
+        <div class="toc-title">Table of Contents</div>
+        <ul class="toc-list">
+          <li><a href="#section-1" class="toc-link">1. Shipping Destinations</a></li>
+          <li><a href="#section-2" class="toc-link">2. Order Processing</a></li>
+          <li><a href="#section-3" class="toc-link">3. Processing Time</a></li>
+          <li><a href="#section-4" class="toc-link">4. Shipping Methods</a></li>
+          <li><a href="#section-5" class="toc-link">5. Shipping Charges</a></li>
+          <li><a href="#section-6" class="toc-link">6. Estimated Delivery Times</a></li>
+          <li><a href="#section-7" class="toc-link">7. United States Delivery</a></li>
+          <li><a href="#section-8" class="toc-link">8. Order Tracking</a></li>
+          <li><a href="#section-9" class="toc-link">9. Multiple Shipments</a></li>
+          <li><a href="#section-10" class="toc-link">10. Accurate Shipping Info</a></li>
+          <li><a href="#section-11" class="toc-link">11. Address Changes</a></li>
+          <li><a href="#section-12" class="toc-link">12. Delivery Delays</a></li>
+          <li><a href="#section-13" class="toc-link">13. Lost Packages</a></li>
+          <li><a href="#section-14" class="toc-link">14. Packages Marked Delivered</a></li>
+          <li><a href="#section-15" class="toc-link">15. Damaged Shipments</a></li>
+          <li><a href="#section-16" class="toc-link">16. Incorrect / Missing Items</a></li>
+          <li><a href="#section-17" class="toc-link">17. Undeliverable Packages</a></li>
+          <li><a href="#section-18" class="toc-link">18. Refused Deliveries</a></li>
+          <li><a href="#section-19" class="toc-link">19. Shipping Restrictions</a></li>
+          <li><a href="#section-20" class="toc-link">20. Order Verification</a></li>
+          <li><a href="#section-21" class="toc-link">21. Risk of Loss</a></li>
+          <li><a href="#section-22" class="toc-link">22. Returns After Delivery</a></li>
+          <li><a href="#section-23" class="toc-link">23. Changes to Policy</a></li>
+          <li><a href="#section-24" class="toc-link">24. Contact Us</a></li>
+        </ul>
+      </aside>
+
+      <!-- POLICY CONTENT BODY -->
+      <article class="policy-content-body">
+        
+        <p>At PrinterSetupExperts, we aim to provide a clear and reliable shipping experience for every order. This Shipping &amp; Delivery Policy explains how we process, ship, track, and deliver orders placed through printersetupexperts.com.</p>
+        <p>This policy is designed around the key shipping topics covered by the reference policy, while being tailored specifically to PrinterSetupExperts and its US operations.</p>
+
+        <h2 id="section-1">1. Shipping Destinations</h2>
+        <p>PrinterSetupExperts currently ships eligible orders within the United States.</p>
+        <p>Shipping availability may vary depending on the product, destination, carrier requirements, product restrictions, and other logistical considerations.</p>
+        <p>We may restrict shipment of certain products to specific locations where required by manufacturer, carrier, regulatory, or logistical requirements.</p>
+
+        <h2 id="section-2">2. Order Processing</h2>
+        <p>Orders are generally processed after successful payment authorization and any necessary order verification.</p>
+        <p>Order processing time may vary depending on:</p>
+        <ul>
+          <li>Product availability</li>
+          <li>Order volume</li>
+          <li>Payment verification</li>
+          <li>Shipping destination</li>
+          <li>Weekends and holidays</li>
+          <li>Additional order verification requirements</li>
+        </ul>
+        <p>Orders placed on weekends or recognized holidays may begin processing on the next applicable business day.</p>
+        <p>If additional information is required to verify an order, processing may take longer.</p>
+
+        <h2 id="section-3">3. Processing Time</h2>
+        <p>Most orders are processed within the timeframe indicated on the website or during checkout.</p>
+        <p>Processing times are separate from shipping transit times. An order must first be processed before it can be handed over to the applicable shipping carrier.</p>
+        <p>Unexpected delays may occur due to inventory availability, payment verification, high order volume, holidays, or circumstances outside our reasonable control.</p>
+
+        <h2 id="section-4">4. Shipping Methods</h2>
+        <p>Available shipping methods may vary depending on:</p>
+        <ul>
+          <li>Delivery location</li>
+          <li>Product type</li>
+          <li>Order size and weight</li>
+          <li>Carrier availability</li>
+          <li>Shipping service selected</li>
+        </ul>
+        <p>Available shipping options and applicable charges will generally be displayed during checkout before you complete your purchase.</p>
+        <p>Not every shipping method will be available for every order or destination.</p>
+
+        <h2 id="section-5">5. Shipping Charges</h2>
+        <p>Applicable shipping charges are calculated based on factors such as:</p>
+        <ul>
+          <li>Delivery destination</li>
+          <li>Product size and weight</li>
+          <li>Order value</li>
+          <li>Selected shipping method</li>
+          <li>Carrier rates</li>
+          <li>Applicable promotions</li>
+        </ul>
+        <p>Any applicable shipping charges will be displayed during checkout before payment is completed.</p>
+        <p>If a promotional offer provides free or discounted shipping, the applicable terms of that promotion will apply.</p>
+
+        <h2 id="section-6">6. Estimated Delivery Times</h2>
+        <p>Delivery times depend on the shipping method, destination, product availability, carrier, and other circumstances affecting transportation.</p>
+        <p>Any delivery timeframe displayed on our website, during checkout, or in an order communication is an estimated timeframe and not a guaranteed delivery date, unless expressly stated otherwise.</p>
+        <p>Carrier delays, weather, holidays, transportation disruptions, and other events outside our reasonable control may affect estimated delivery dates.</p>
+
+        <h2 id="section-7">7. United States Delivery</h2>
+        <p>Orders shipped within the United States are delivered using available shipping carriers based on the destination, product, order, and selected shipping service.</p>
+        <p>Customers are responsible for providing a complete and accurate shipping address, including apartment, suite, unit, or building information where applicable.</p>
+        <p>Providing incomplete or incorrect delivery information may result in delays, additional charges, or an undeliverable shipment.</p>
+
+        <h2 id="section-8">8. Order Tracking</h2>
+        <p>When tracking information is available, it will generally be provided after your order has shipped.</p>
+        <p>Tracking information may take some time to become active after a shipping label has been created or after the carrier receives the package.</p>
+        <p>Once tracking becomes active, customers can use the provided tracking information to monitor the shipment through the applicable carrier.</p>
+
+        <h2 id="section-9">9. Multiple Shipments</h2>
+        <p>An order containing multiple products may occasionally be shipped in separate packages.</p>
+        <p>This means:</p>
+        <ul>
+          <li>Products may arrive on different dates.</li>
+          <li>More than one tracking number may be provided.</li>
+          <li>One item arriving before another does not necessarily mean the remaining item is missing.</li>
+        </ul>
+        <p>Please review all available tracking information before reporting an item as missing.</p>
+
+        <h2 id="section-10">10. Accurate Shipping Information</h2>
+        <p>Customers are responsible for providing accurate and complete shipping information during checkout.</p>
+        <p>Please carefully review:</p>
+        <ul>
+          <li>Recipient name</li>
+          <li>Street address</li>
+          <li>Apartment, suite, or unit number</li>
+          <li>City</li>
+          <li>State</li>
+          <li>ZIP code</li>
+          <li>Contact information</li>
+        </ul>
+        <p>PrinterSetupExperts is not responsible for delivery problems caused by incorrect or incomplete information supplied by the customer, except where otherwise required by applicable law.</p>
+
+        <h2 id="section-11">11. Address Changes</h2>
+        <p>If you need to change your shipping address after placing an order, contact us as soon as possible at:</p>
+        <p><a href="mailto:hello@printerexpertshub.com" style="color: var(--color-blue);">hello@printerexpertshub.com</a></p>
+        <p>We will make reasonable efforts to accommodate an address-change request before the order is shipped.</p>
+        <p>However, we cannot guarantee that an address can be changed once an order has entered processing or has been transferred to a shipping carrier.</p>
+        <p>Certain address changes may require additional verification for security purposes.</p>
+
+        <h2 id="section-12">12. Delivery Delays</h2>
+        <p>Although we work to provide accurate shipping estimates, delivery delays may occasionally occur because of circumstances including:</p>
+        <ul>
+          <li>Severe weather</li>
+          <li>Carrier disruptions</li>
+          <li>High shipping volumes</li>
+          <li>Holiday periods</li>
+          <li>Transportation delays</li>
+          <li>Incorrect or incomplete addresses</li>
+          <li>Product availability</li>
+          <li>Natural disasters</li>
+          <li>Government restrictions</li>
+          <li>Other circumstances outside our reasonable control</li>
+        </ul>
+        <p>If tracking indicates that a shipment is delayed, customers may also contact the applicable carrier for the latest transportation information.</p>
+
+        <h2 id="section-13">13. Lost Packages</h2>
+        <p>If tracking information indicates that a shipment has not been delivered within a reasonable period, please contact us at <a href="mailto:hello@printerexpertshub.com" style="color: var(--color-blue);">hello@printerexpertshub.com</a>.</p>
+        <p>We may review the available order and tracking information and, where appropriate, coordinate with the applicable carrier.</p>
+        <p>Additional information may be requested before a resolution is determined.</p>
+
+        <h2 id="section-14">14. Packages Marked as Delivered</h2>
+        <p>If tracking shows that your package has been delivered but you cannot locate it, we recommend:</p>
+        <ul>
+          <li>Checking around the delivery location.</li>
+          <li>Checking with household members or others at the delivery address.</li>
+          <li>Checking your building's reception area, mailroom, or other designated delivery area, where applicable.</li>
+          <li>Reviewing the carrier's tracking information.</li>
+          <li>Allowing a reasonable amount of time in case the package was marked delivered before the physical delivery was completed.</li>
+          <li>Contacting the applicable shipping carrier for additional delivery information.</li>
+        </ul>
+        <p>If the package still cannot be located, contact us with your order number and tracking information so we can review the matter.</p>
+
+        <h2 id="section-15">15. Damaged Shipments</h2>
+        <p>If your order arrives with visible shipping or packaging damage, please contact us promptly.</p>
+        <p>Please retain:</p>
+        <ul>
+          <li>The damaged product</li>
+          <li>Original product packaging</li>
+          <li>Shipping box</li>
+          <li>Shipping label</li>
+          <li>Packing materials</li>
+        </ul>
+        <p>We may request photographs of the product and packaging to help us review the claim.</p>
+        <p>Eligible damaged-product claims will be handled in accordance with our Refund &amp; Return Policy.</p>
+
+        <h2 id="section-16">16. Incorrect or Missing Items</h2>
+        <p>If you receive an incorrect product or believe an item is missing from your shipment, contact us at <a href="mailto:hello@printerexpertshub.com" style="color: var(--color-blue);">hello@printerexpertshub.com</a> with your order number and details of the issue.</p>
+        <p>Before reporting an item as missing, please check whether your order was divided into multiple shipments and review all available tracking information.</p>
+        <p>We will review the order and shipping information and provide appropriate next steps.</p>
+
+        <h2 id="section-17">17. Undeliverable Packages</h2>
+        <p>A shipment may be returned to us if:</p>
+        <ul>
+          <li>The shipping address is incorrect or incomplete.</li>
+          <li>The carrier cannot access the delivery location.</li>
+          <li>Delivery attempts are unsuccessful.</li>
+          <li>The recipient refuses the shipment.</li>
+          <li>The package is not collected when required.</li>
+          <li>The carrier determines that the shipment cannot be delivered.</li>
+        </ul>
+        <p>If an order is returned to us as undeliverable, we will review the circumstances and contact you when appropriate.</p>
+        <p>Additional shipping charges may apply if reshipment is requested because of an incorrect address or another customer-related delivery issue.</p>
+
+        <h2 id="section-18">18. Refused Deliveries</h2>
+        <p>Customers should contact PrinterSetupExperts before refusing delivery whenever possible.</p>
+        <p>Refusing delivery does not automatically qualify an order for a full refund.</p>
+        <p>If a refused shipment is returned to us, the order will be reviewed under our Refund &amp; Return Policy, and applicable shipping or return costs may apply where permitted by law.</p>
+
+        <h2 id="section-19">19. Shipping Restrictions</h2>
+        <p>Certain products or destinations may be subject to shipping restrictions because of:</p>
+        <ul>
+          <li>Carrier requirements</li>
+          <li>Product characteristics</li>
+          <li>Manufacturer restrictions</li>
+          <li>Regulatory requirements</li>
+          <li>Destination restrictions</li>
+          <li>Other logistical considerations</li>
+        </ul>
+        <p>If an order cannot be fulfilled because of a shipping restriction, we will provide an appropriate resolution, which may include cancellation and refund of the affected product or order.</p>
+
+        <h2 id="section-20">20. Order Verification &amp; Shipping Security</h2>
+        <p>To help protect customers and prevent unauthorized transactions, certain orders may require additional verification before shipment.</p>
+        <p>We may temporarily hold an order while verifying information such as:</p>
+        <ul>
+          <li>Billing information</li>
+          <li>Shipping information</li>
+          <li>Payment authorization</li>
+          <li>Contact information</li>
+          <li>Other transaction details reasonably necessary for order verification</li>
+        </ul>
+        <p>Failure to complete required verification may result in an order being delayed or canceled.</p>
+
+        <h2 id="section-21">21. Risk of Loss</h2>
+        <p>Responsibility for shipments and risk of loss will be determined in accordance with applicable law and the circumstances of the transaction.</p>
+        <p>Nothing in this policy is intended to limit consumer rights that cannot legally be waived or restricted.</p>
+
+        <h2 id="section-22">22. Returns After Delivery</h2>
+        <p>Shipping and delivery are separate from our return process.</p>
+        <p>If you successfully receive an order but later want to return an eligible product, please review our Refund &amp; Return Policy for information regarding:</p>
+        <ul>
+          <li>Return eligibility</li>
+          <li>Return timeframes</li>
+          <li>Return shipping responsibilities</li>
+          <li>Non-returnable products</li>
+          <li>Refund processing</li>
+          <li>Damaged or defective products</li>
+        </ul>
+        <p>Please contact us before sending a product back.</p>
+
+        <h2 id="section-23">23. Changes to This Policy</h2>
+        <p>PrinterSetupExperts may update this Shipping &amp; Delivery Policy periodically to reflect changes to our shipping practices, carriers, service areas, business operations, or applicable requirements.</p>
+        <p>The Last Updated date at the top of this page indicates when this policy was most recently revised.</p>
+
+        <h2 id="section-24">24. Contact Us</h2>
+        <p>For questions regarding shipping, delivery, tracking, missing packages, damaged shipments, or an existing order, please contact:</p>
+        <p>
+          <strong>PrinterSetupExperts</strong><br>
+          Address: 30 N Gould Street, Suite R, Sheridan, WY 82801<br>
+          Email: <a href="mailto:hello@printerexpertshub.com" style="color: var(--color-blue);">hello@printerexpertshub.com</a>
+        </p>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div class="footer-col">
+          <span class="footer-col-eyebrow">ABOUT</span>
+          <h3 class="footer-col-title">Printer Setup</h3>
+          <p class="footer-about-text">A practical resource for printer installation, software setup, connection guidance, diagnostic checks, and everyday printing help.</p>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-eyebrow">POLICIES</span>
+          <ul class="footer-links-list">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-eyebrow">CONTACT</span>
+          <div class="footer-contact-block">
+            <div class="footer-contact-item">
+              <span class="contact-label">Phone</span>
+              <a href="tel:85201477963" class="contact-value-link">85201477963</a>
+            </div>
+            <div class="footer-contact-item" style="margin-top: 8px;">
+              <span class="contact-label">Email</span>
+              <a href="mailto:hello@printerexpertshub.com" class="contact-value-link">hello@printerexpertshub.com</a>
+            </div>
+            <div class="footer-contact-item" style="margin-top: 8px;">
+              <span class="contact-label">Address</span>
+              <span class="contact-value-text" style="font-size: 0.85rem; color: #CCCCCC; display: block; line-height: 1.35;">30 N Gould Street, Suite R, Sheridan, WY 82801</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-copy-text">&copy; 2026 Printer Setup</div>
+        <div class="footer-meta-text">Independent printer setup resource.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

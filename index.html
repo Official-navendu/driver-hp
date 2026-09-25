@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Printer Setup &amp; Driver Installation Portal — Complete Hardware &amp; Software Guide</title>
   <meta name="description" content="Comprehensive step-by-step printer setup instructions, driver installation packages, wireless connection manuals, operating system configuration guides, and print fix solutions for your printer.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/printer-favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/printer-favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/printer-favicon-180.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -145,7 +149,7 @@
             </div>
             <div class="step-image-box">
               <div class="step-img-crop crop-front">
-                <img src="assets/step-01-find-model.svg" alt="Locating Printer Model Identification Label">
+                <img src="assets/setup-step-01.webp" alt="Locating Printer Model Identification Label">
               </div>
             </div>
           </div>
@@ -155,7 +159,7 @@
             <div class="step-dot">02</div>
             <div class="step-image-box" style="order: 1;">
               <div class="step-img-crop crop-tray">
-                <img src="assets/step-02-prepare-printer.svg" alt="Preparing Printer Hardware Unboxing Paper Load">
+                <img src="assets/setup-step-02.webp" alt="Preparing Printer Hardware Unboxing Paper Load">
               </div>
             </div>
             <div class="step-content-box" style="order: 2;">
@@ -199,7 +203,7 @@
             </div>
             <div class="step-image-box">
               <div class="step-img-crop crop-full">
-                <img src="assets/step-03-install-software.svg" alt="Installing Software Package on Computer">
+                <img src="assets/setup-step-03.webp" alt="Installing Software Package on Computer">
               </div>
             </div>
           </div>
@@ -209,7 +213,7 @@
             <div class="step-dot">04</div>
             <div class="step-image-box" style="order: 1;">
               <div class="step-img-crop crop-rear">
-                <img src="assets/step-04-connect-print.svg" alt="Connecting Printer Wireless USB Network">
+                <img src="assets/setup-step-04.webp" alt="Connecting Printer Wireless USB Network">
               </div>
             </div>
             <div class="step-content-box" style="order: 2;">
@@ -237,98 +241,204 @@
     <!-- 8-STEP DIAGNOSTIC FIX GUIDE (Warm Soft Red Accent Section) -->
     <section class="section-padding fix-section" id="fix-guide">
       <div class="container">
-        <div class="fix-header-row">
-          <div>
-            <span class="eyebrow fix-eyebrow">DIAGNOSTIC &amp; REPAIR MANUAL</span>
-            <h2 class="section-title">Having trouble printing? Follow the 8-step fix checklist.</h2>
-            <p class="section-subtitle">Use this systematic diagnostic flow to resolve offline status, print spooler freezes, paper jams, wireless disconnection, and poor print quality issues.</p>
-          </div>
-          <div class="fix-header-image">
-            <div class="fix-img-frame">
-              <img src="assets/printer.png" alt="Printer Diagnostics &amp; Repair Manual Visual">
-            </div>
-          </div>
+        <div class="section-header fix-section-header">
+          <span class="eyebrow fix-eyebrow">DIAGNOSTIC &amp; REPAIR MANUAL</span>
+          <h2 class="section-title">Having trouble printing? Follow the 8-step fix checklist.</h2>
+          <p class="section-subtitle">Work through these checks in order to identify common printer power, connection, software, paper, ink, and print-quality issues. Start with the basic checks and move through the checklist before changing any advanced printer settings.</p>
         </div>
 
-        <div class="trouble-grid-8">
-          <!-- 01 Check power -->
-          <div class="trouble-item-card" data-fix="power">
-            <div class="trouble-card-top">
-              <span class="trouble-num">01</span>
-              <svg class="trouble-icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+        <div class="diag-checklist-grid">
+          <!-- Step 01 -->
+          <div class="diag-step-card trouble-item-card" data-fix="power">
+            <div class="diag-card-header">
+              <span class="diag-step-num">01</span>
+              <span class="diag-step-tag">CHECK POWER</span>
             </div>
-            <h4 class="trouble-item-title">Check power &amp; electrical supply</h4>
-            <p class="trouble-item-desc">Verify power cable is firmly seated into printer power port and plugged directly into a working AC wall outlet. Confirm power button LED is solid green/white without flickering.</p>
+            <h3 class="diag-step-title">Check the printer power</h3>
+            <p class="diag-step-desc">Make sure the printer is switched on and receiving power before checking other parts of the setup.</p>
+            <div class="diag-checks-list">
+              <span class="diag-list-heading">Detailed checks:</span>
+              <ul>
+                <li>Confirm that the power cable is securely connected to the printer.</li>
+                <li>Check that the other end is firmly connected to the power outlet.</li>
+                <li>Make sure the printer's power indicator or display is active.</li>
+                <li>If the printer does not respond, try a known working power outlet.</li>
+                <li>Avoid repeatedly disconnecting and reconnecting the power cable while the printer is starting.</li>
+              </ul>
+            </div>
+            <div class="diag-quick-check">
+              <span class="quick-check-badge">Quick check</span>
+              <span class="quick-check-text">Printer display or power indicator should be active.</span>
+            </div>
           </div>
 
-          <!-- 02 Check for display errors -->
-          <div class="trouble-item-card" data-fix="errors">
-            <div class="trouble-card-top">
-              <span class="trouble-num">02</span>
-              <svg class="trouble-icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="18"></line><line x1="12" y1="12" x2="12" y2="14"></line></svg>
+          <!-- Step 02 -->
+          <div class="diag-step-card trouble-item-card" data-fix="errors">
+            <div class="diag-card-header">
+              <span class="diag-step-num">02</span>
+              <span class="diag-step-tag">CHECK PRINTER STATUS</span>
             </div>
-            <h4 class="trouble-item-title">Check display error codes</h4>
-            <p class="trouble-item-desc">Inspect front panel LCD screen or LED warning indicators for error codes (e.g., E1, E2, E3, E9, Door Open, Cartridge Error). Refer to error code manual for resolution.</p>
+            <h3 class="diag-step-title">Check the printer status</h3>
+            <p class="diag-step-desc">Look at the printer display, indicator lights, or status area for messages that may prevent printing.</p>
+            <div class="diag-checks-list">
+              <span class="diag-list-heading">Detailed checks:</span>
+              <ul>
+                <li>Check for warning or error messages.</li>
+                <li>Confirm that the printer shows a ready or idle state.</li>
+                <li>Check whether the printer is paused or showing an attention notification.</li>
+                <li>Open the printer status window on the connected computer when available.</li>
+                <li>Resolve any visible paper, ink, toner, or connection warning before sending another print job.</li>
+              </ul>
+            </div>
+            <div class="diag-quick-check">
+              <span class="quick-check-badge">Quick check</span>
+              <span class="quick-check-text">The printer should be powered on and ready to receive a print job.</span>
+            </div>
           </div>
 
-          <!-- 03 Check connection -->
-          <div class="trouble-item-card" data-fix="connection">
-            <div class="trouble-card-top">
-              <span class="trouble-num">03</span>
-              <svg class="trouble-icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+          <!-- Step 03 -->
+          <div class="diag-step-card trouble-item-card" data-fix="connection">
+            <div class="diag-card-header">
+              <span class="diag-step-num">03</span>
+              <span class="diag-step-tag">CHECK THE CONNECTION</span>
             </div>
-            <h4 class="trouble-item-title">Check Wi-Fi &amp; USB ports</h4>
-            <p class="trouble-item-desc">Confirm computer and printer are connected to identical 2.4GHz Wi-Fi SSID network. If using USB cable, disconnect and re-insert into direct motherboard USB port.</p>
+            <h3 class="diag-step-title">Check the printer connection</h3>
+            <p class="diag-step-desc">Confirm that the connection between your device and printer is active and stable.</p>
+            <div class="diag-checks-list">
+              <span class="diag-list-heading">Detailed checks:</span>
+              <ul>
+                <li><strong>For Wi-Fi:</strong> Confirm printer is connected to intended wireless network, check device network and wireless status.</li>
+                <li><strong>For USB:</strong> Confirm USB cable is securely connected, try another compatible USB port, avoid damaged cables.</li>
+                <li><strong>For network printers:</strong> Confirm printer remains connected to local network and has not gone offline.</li>
+              </ul>
+            </div>
+            <div class="diag-quick-check">
+              <span class="quick-check-badge">Quick check</span>
+              <span class="quick-check-text">The printer should appear connected and ready on your device.</span>
+            </div>
           </div>
 
-          <!-- 04 Check ink or toner -->
-          <div class="trouble-item-card" data-fix="supplies">
-            <div class="trouble-card-top">
-              <span class="trouble-num">04</span>
-              <svg class="trouble-icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+          <!-- Step 04 -->
+          <div class="diag-step-card trouble-item-card" data-fix="supplies">
+            <div class="diag-card-header">
+              <span class="diag-step-num">04</span>
+              <span class="diag-step-tag">CHECK INK OR TONER</span>
             </div>
-            <h4 class="trouble-item-title">Check ink or toner levels</h4>
-            <p class="trouble-item-desc">Open access door to inspect cartridge seating. Ensure orange protective tape seal is completely removed and contacts are clean. Run software printhead cleaning cycle if ink is low.</p>
+            <h3 class="diag-step-title">Check ink or toner</h3>
+            <p class="diag-step-desc">Low or incorrectly installed ink or toner can prevent normal printing or affect print quality.</p>
+            <div class="diag-checks-list">
+              <span class="diag-list-heading">Detailed checks:</span>
+              <ul>
+                <li>Confirm the required cartridges or toner are installed correctly.</li>
+                <li>Check the printer's ink or toner status.</li>
+                <li>Make sure protective packaging has been removed from a newly installed cartridge where applicable.</li>
+                <li>Reinstall the cartridge if the printer reports an installation or recognition issue.</li>
+                <li>Replace an empty cartridge or toner supply when required.</li>
+              </ul>
+            </div>
+            <div class="diag-quick-check">
+              <span class="quick-check-badge">Quick check</span>
+              <span class="quick-check-text">The printer should recognize the installed ink or toner supply.</span>
+            </div>
           </div>
 
-          <!-- 05 Check paper tray -->
-          <div class="trouble-item-card" data-fix="paper">
-            <div class="trouble-card-top">
-              <span class="trouble-num">05</span>
-              <svg class="trouble-icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="8" y1="8" x2="16" y2="8"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          <!-- Step 05 -->
+          <div class="diag-step-card trouble-item-card" data-fix="paper">
+            <div class="diag-card-header">
+              <span class="diag-step-num">05</span>
+              <span class="diag-step-tag">CHECK PAPER</span>
             </div>
-            <h4 class="trouble-item-title">Clear paper jams &amp; tray feeds</h4>
-            <p class="trouble-item-desc">Remove paper stack, inspect input tray rollers, and carefully pull out jammed paper from rear access door or duplex unit using both hands to avoid tearing paper.</p>
+            <h3 class="diag-step-title">Check paper and paper path</h3>
+            <p class="diag-step-desc">Incorrectly loaded paper or a paper obstruction can interrupt printing and may cause incomplete or failed print jobs.</p>
+            <div class="diag-checks-list">
+              <span class="diag-list-heading">Detailed checks:</span>
+              <ul>
+                <li>Make sure the correct paper size is loaded.</li>
+                <li>Align the paper stack correctly inside the tray.</li>
+                <li>Do not overfill the paper tray.</li>
+                <li>Check the visible paper path for an obstruction.</li>
+                <li>Remove any loose or incorrectly positioned sheet carefully.</li>
+                <li>Confirm that the selected paper size matches the paper loaded in the printer.</li>
+              </ul>
+            </div>
+            <div class="diag-quick-check">
+              <span class="quick-check-badge">Quick check</span>
+              <span class="quick-check-text">Paper should be loaded correctly with no visible obstruction.</span>
+            </div>
           </div>
 
-          <!-- 06 Restart spooler -->
-          <div class="trouble-item-card" data-fix="restart">
-            <div class="trouble-card-top">
-              <span class="trouble-num">06</span>
-              <svg class="trouble-icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+          <!-- Step 06 -->
+          <div class="diag-step-card trouble-item-card" data-fix="restart">
+            <div class="diag-card-header">
+              <span class="diag-step-num">06</span>
+              <span class="diag-step-tag">RESTART THE PRINTER</span>
             </div>
-            <h4 class="trouble-item-title">Restart print spooler service</h4>
-            <p class="trouble-item-desc">Power cycle printer and router. On Windows, press Win+R, type services.msc, right-click Print Spooler service, click Restart, and clear pending queued documents.</p>
+            <h3 class="diag-step-title">Restart the printer</h3>
+            <p class="diag-step-desc">A normal restart can clear temporary communication or printer state issues.</p>
+            <div class="diag-checks-list">
+              <span class="diag-list-heading">Detailed checks:</span>
+              <ul>
+                <li>Finish or cancel any active print job.</li>
+                <li>Turn the printer off using its normal power control.</li>
+                <li>Wait briefly before turning it back on.</li>
+                <li>Allow the printer to complete its startup process.</li>
+                <li>Confirm that it returns to a ready state.</li>
+                <li>Send a simple test print after the printer is ready.</li>
+              </ul>
+            </div>
+            <div class="diag-quick-check">
+              <span class="quick-check-badge">Quick check</span>
+              <span class="quick-check-text">Wait until the printer has fully completed startup before printing.</span>
+            </div>
           </div>
 
-          <!-- 07 Update software -->
-          <div class="trouble-item-card" data-fix="software">
-            <div class="trouble-card-top">
-              <span class="trouble-num">07</span>
-              <svg class="trouble-icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          <!-- Step 07 -->
+          <div class="diag-step-card trouble-item-card" data-fix="software">
+            <div class="diag-card-header">
+              <span class="diag-step-num">07</span>
+              <span class="diag-step-tag">CHECK THE SOFTWARE</span>
             </div>
-            <h4 class="trouble-item-title">Update driver software &amp; OS</h4>
-            <p class="trouble-item-desc">Reinstall or update printer driver package to resolve port communication conflicts after operating system updates on Windows 11 or macOS Sonoma.</p>
+            <h3 class="diag-step-title">Check printer software and driver setup</h3>
+            <p class="diag-step-desc">The computer must have the appropriate printer software or driver for the selected printer model and operating system.</p>
+            <div class="diag-checks-list">
+              <span class="diag-list-heading">Detailed checks:</span>
+              <ul>
+                <li>Confirm that the correct printer is selected on the computer.</li>
+                <li>Check that the printer software is installed for the intended printer model.</li>
+                <li>Make sure the selected printer is not an old or duplicate entry.</li>
+                <li>Check whether the printer appears offline in the system settings.</li>
+                <li>If the installation package needs to be installed again, use the package intended for the exact printer model and operating system.</li>
+              </ul>
+            </div>
+            <div class="diag-quick-check">
+              <span class="quick-check-badge">Quick check</span>
+              <span class="quick-check-text">The correct printer should appear as the selected and ready device.</span>
+            </div>
           </div>
 
-          <!-- 08 Try printing again -->
-          <div class="trouble-item-card" data-fix="testpage">
-            <div class="trouble-card-top">
-              <span class="trouble-num">08</span>
-              <svg class="trouble-icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <!-- Step 08 -->
+          <div class="diag-step-card trouble-item-card" data-fix="testpage">
+            <div class="diag-card-header">
+              <span class="diag-step-num">08</span>
+              <span class="diag-step-tag">PRINT A TEST PAGE</span>
             </div>
-            <h4 class="trouble-item-title">Print alignment diagnostic page</h4>
-            <p class="trouble-item-desc">Open system Printers &amp; Scanners menu, select your printer, click Print Test Page, and evaluate line sharpness and color registration grid output.</p>
+            <h3 class="diag-step-title">Print a test page</h3>
+            <p class="diag-step-desc">A test page is the final practical check to confirm that the printer can receive and process a basic print job.</p>
+            <div class="diag-checks-list">
+              <span class="diag-list-heading">Detailed checks:</span>
+              <ul>
+                <li>Make sure the printer is ready.</li>
+                <li>Confirm paper is loaded.</li>
+                <li>Send a simple test page.</li>
+                <li>Check whether the printer starts the print job.</li>
+                <li>Inspect the output for missing text, lines, faded areas, or other quality problems.</li>
+                <li>If the test page prints correctly, retry the original document.</li>
+              </ul>
+            </div>
+            <div class="diag-quick-check">
+              <span class="quick-check-badge">Quick check</span>
+              <span class="quick-check-text">A successful test page confirms that the basic printer workflow is functioning.</span>
+            </div>
           </div>
         </div>
       </div>
@@ -454,204 +564,332 @@
     </section>
 
     <!-- PRINTER SETUP FREQUENTLY ASKED QUESTIONS (Accordion Section) -->
-    <section class="section-padding" id="faq-section">
+    <section class="section-padding faq-knowledge-section" id="faq-section">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header faq-main-header">
           <span class="eyebrow">KNOWLEDGE BASE &amp; FAQ</span>
           <h2 class="section-title">Frequently asked printer setup questions</h2>
-          <p class="section-subtitle">Detailed technical answers to common printer installation, connectivity, and hardware configuration questions.</p>
+          <p class="section-subtitle">Find clear answers to common questions about printer installation, software setup, wireless connections, printing, and everyday printer configuration.</p>
         </div>
 
-        <div class="accordion-wrapper">
-          <!-- Item 1 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>How do I set up a wireless printer without using a USB cable?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                Setting up a wireless printer over Wi-Fi without a USB cable can be accomplished using WPS (Wi-Fi Protected Setup) or Software Auto-Connect. First, ensure your Wi-Fi router includes WPS capability. Press and hold the Wireless button on your printer panel for 3 seconds until the wireless status LED begins blinking. Within 2 minutes, press the WPS button on your wireless router. The printer will negotiate credentials and establish a connection. Once the wireless light stays solid blue, run the driver setup software on your computer, select "Wireless Network Connection", and your computer will automatically discover the printer on the local network.
-              </p>
+        <div class="faq-groups-wrapper">
+          
+          <!-- PART 01: PRINTER SETUP & INSTALLATION -->
+          <div class="faq-group-block group-part-01">
+            <div class="faq-group-grid">
+              <!-- Desktop Left Side: Category Panel -->
+              <div class="faq-category-panel">
+                <div class="panel-badge-range">01 &mdash; 05</div>
+                <span class="panel-eyebrow">PRINTER SETUP</span>
+                <h3 class="panel-title">Printer installation &amp; setup</h3>
+                <p class="panel-desc">Get your printer ready from the first connection through software installation and your first test print.</p>
+                <div class="panel-accent-line"></div>
+              </div>
+
+              <!-- Desktop Right Side: 5 FAQ Accordion Items -->
+              <div class="faq-items-list">
+                <!-- FAQ 01 -->
+                <div class="accordion-item faq-accordion-item is-open">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-01" aria-expanded="true" aria-controls="faq-ans-01">
+                    <span class="faq-num">01</span>
+                    <span class="faq-question-text">How do I identify my printer model?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-01" role="region" aria-labelledby="faq-head-01">
+                    <div class="faq-body-inner">
+                      <p>Locate the model name or product number printed on the printer. It is commonly found on the front panel, top surface, control panel, or a product label. Enter the exact model information during setup to make sure the appropriate installation package is selected.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 02 -->
+                <div class="accordion-item faq-accordion-item">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-02" aria-expanded="false" aria-controls="faq-ans-02">
+                    <span class="faq-num">02</span>
+                    <span class="faq-question-text">What should I do before installing the printer software?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-02" role="region" aria-labelledby="faq-head-02">
+                    <div class="faq-body-inner">
+                      <p>Place the printer near a suitable power source, remove all packaging materials, install the required ink or toner, load compatible paper, and turn the printer on. If you are using Wi-Fi, keep the printer within a reliable range of your wireless network during setup.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 03 -->
+                <div class="accordion-item faq-accordion-item">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-03" aria-expanded="false" aria-controls="faq-ans-03">
+                    <span class="faq-num">03</span>
+                    <span class="faq-question-text">How do I install the printer software?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-03" role="region" aria-labelledby="faq-head-03">
+                    <div class="faq-body-inner">
+                      <p>Start the printer setup process and select the software package provided for your printer model and operating system. Run the installation package and follow the setup instructions. Depending on the printer, you may be asked to connect the printer through Wi-Fi, USB, or another supported connection method.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 04 -->
+                <div class="accordion-item faq-accordion-item">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-04" aria-expanded="false" aria-controls="faq-ans-04">
+                    <span class="faq-num">04</span>
+                    <span class="faq-question-text">Which operating systems can I use with my printer?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-04" role="region" aria-labelledby="faq-head-04">
+                    <div class="faq-body-inner">
+                      <p>Printer software availability depends on the specific printer model. Common supported platforms include Windows and macOS, while some printers also provide setup and printing options for Android and iOS devices. Always use the software or setup package intended for your printer model and operating system.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 05 -->
+                <div class="accordion-item faq-accordion-item">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-05" aria-expanded="false" aria-controls="faq-ans-05">
+                    <span class="faq-num">05</span>
+                    <span class="faq-question-text">How do I know when my printer setup is complete?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-05" role="region" aria-labelledby="faq-head-05">
+                    <div class="faq-body-inner">
+                      <p>The setup is generally complete once the printer has been connected, the required software has been installed, and the printer is ready to receive print jobs. Printing a test page is a useful final check because it confirms communication between the device and printer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Item 2 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>What steps resolve a "Printer Offline" status on Windows 11?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                A "Printer Offline" status on Windows 11 usually indicates a communication breakdown between the Windows Print Spooler and the printer's assigned IP address. To fix this:
-              </p>
-              <ul class="faq-list">
-                <li>Power cycle both your printer and wireless router to refresh network DHCP leases.</li>
-                <li>Open <strong>Settings &gt; Bluetooth &amp; devices &gt; Printers &amp; scanners</strong>, click your printer, and select <strong>Open print queue</strong>.</li>
-                <li>In the print queue window, click the <strong>Printer</strong> menu item and ensure <strong>Use Printer Offline</strong> is unchecked.</li>
-                <li>Press Win+R, type <code>services.msc</code>, locate <strong>Print Spooler</strong>, right-click and choose <strong>Restart</strong>.</li>
-              </ul>
+          <!-- PART 02: PRINTING & CONNECTION -->
+          <div class="faq-group-block group-part-02">
+            <div class="faq-group-grid group-grid-reversed">
+              <!-- Desktop Left Side: 5 FAQ Accordion Items (06 - 10) -->
+              <div class="faq-items-list col-faqs">
+                <!-- FAQ 06 -->
+                <div class="accordion-item faq-accordion-item">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-06" aria-expanded="false" aria-controls="faq-ans-06">
+                    <span class="faq-num">06</span>
+                    <span class="faq-question-text">How do I connect my printer to Wi-Fi?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-06" role="region" aria-labelledby="faq-head-06">
+                    <div class="faq-body-inner">
+                      <p>Turn on the printer and open its wireless or network setup option. Select your Wi-Fi network and enter the network password when requested. Keep the printer within a stable wireless range while the connection is being established. After connecting, confirm that the printer shows an active network connection.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 07 -->
+                <div class="accordion-item faq-accordion-item">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-07" aria-expanded="false" aria-controls="faq-ans-07">
+                    <span class="faq-num">07</span>
+                    <span class="faq-question-text">Why is my printer connected but not printing?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-07" role="region" aria-labelledby="faq-head-07">
+                    <div class="faq-body-inner">
+                      <p>First check that the correct printer is selected on your computer or mobile device. Confirm that the printer is powered on and ready, then check the connection and print queue. Make sure paper is loaded and that there are no visible warning messages. If the problem continues, restart the printer and send a new test print.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 08 -->
+                <div class="accordion-item faq-accordion-item">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-08" aria-expanded="false" aria-controls="faq-ans-08">
+                    <span class="faq-num">08</span>
+                    <span class="faq-question-text">What should I check if a print job is stuck?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-08" role="region" aria-labelledby="faq-head-08">
+                    <div class="faq-body-inner">
+                      <p>Check the printer status and open the print queue on your device. Cancel any failed or stalled jobs, then confirm that the printer is still connected. Restarting the printer can clear temporary communication problems. After the printer becomes ready, send the document again.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 09 -->
+                <div class="accordion-item faq-accordion-item">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-09" aria-expanded="false" aria-controls="faq-ans-09">
+                    <span class="faq-num">09</span>
+                    <span class="faq-question-text">What should I do if the printer is not detected?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-09" role="region" aria-labelledby="faq-head-09">
+                    <div class="faq-body-inner">
+                      <p>Confirm that the printer is powered on and connected through the intended connection method. For Wi-Fi printers, make sure the printer and device are using the appropriate network. For USB connections, check the cable and port. Restarting both the printer and the device can also help establish a fresh connection.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="accordion-item faq-accordion-item">
+                  <button type="button" class="accordion-header faq-accordion-header" id="faq-head-10" aria-expanded="false" aria-controls="faq-ans-10">
+                    <span class="faq-num">10</span>
+                    <span class="faq-question-text">What should I check if the printer is printing incorrectly?</span>
+                    <span class="faq-toggle-btn" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content faq-accordion-body" id="faq-ans-10" role="region" aria-labelledby="faq-head-10">
+                    <div class="faq-body-inner">
+                      <p>Check the paper type and paper loading first, then inspect the ink or toner level and printer status. Make sure the selected paper settings match the loaded paper. If the output remains incorrect, check the printer software settings and run a test page to determine whether the issue affects the printer itself or a specific document.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Desktop Right Side: Category Panel -->
+              <div class="faq-category-panel col-panel">
+                <div class="panel-badge-range">06 &mdash; 10</div>
+                <span class="panel-eyebrow">PRINTING &amp; CONNECTION</span>
+                <h3 class="panel-title">Connection, printing &amp; common fixes</h3>
+                <p class="panel-desc">Find practical answers for Wi-Fi, USB, print jobs, paper, ink or toner, and common printing problems.</p>
+                <div class="panel-accent-line"></div>
+              </div>
             </div>
           </div>
 
-          <!-- Item 3 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>What is the difference between a Full Feature Driver and a Basic Driver?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                A <strong>Full Feature Driver &amp; Software Package</strong> includes the primary print engine driver alongside advanced scanning utilities (TWAIN/WIA drivers), optical character recognition (OCR) tools, ink level monitor software, and network configuration diagnostic tools. A <strong>Basic Driver</strong> (such as an INF or PCL driver) contains only the core code required for Windows or macOS to send print jobs to the printer queue. Basic drivers are recommended for system administrators managing enterprise networks or low-bandwidth environments where full software applications are not required.
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 4 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>How do I find the IP address of my network printer?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                You can obtain your printer's IP address through several methods:
-              </p>
-              <ul class="faq-list">
-                <li><strong>Network Status Page:</strong> Press and hold the Information (i) or Wireless button on the printer control panel for 3 seconds to print a Wireless Network Test Report containing your IPv4 address (e.g., 192.168.1.150).</li>
-                <li><strong>Printer Display Screen:</strong> On touchscreen models, tap the Wireless or Settings icon to view active Wi-Fi connection details.</li>
-                <li><strong>Router Admin Console:</strong> Log into your Wi-Fi router management panel (usually 192.168.1.1 or 192.168.0.1) and check the DHCP Connected Devices client list.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Item 5 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>Why is my printer producing blank pages or faint print output?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                Blank or faint print output is typically caused by clogged printhead nozzles, protective tape left on new ink cartridges, or incorrect print density settings. Ensure all orange protective plastic sealing tape has been removed completely from cartridge vents before installation. If cartridges are seated correctly, run a <strong>Printhead Cleaning Utility</strong> cycle through your printer software or control panel settings to clear dried ink residue from microscopic printhead nozzles.
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 6 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>How do I clear a paper jam without damaging internal rollers?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                To safely clear a paper jam: Turn off the printer power switch and disconnect the AC power cord. Open the rear access panel or duplexer unit. Grasp the stuck paper firmly with both hands and pull it out slowly and evenly in the direction of the paper path to avoid tearing the sheet or damaging internal feed rollers. Inspect the paper path with a flashlight to remove small paper scraps, close all access doors, reconnect power, and print a alignment test page.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- HELP / CONTACT SECTION -->
+    <!-- HELP & RESOURCE DIRECTORY -->
     <section class="section-padding help-section" id="help">
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">HELP &amp; RESOURCE DIRECTORY</span>
           <h2 class="section-title">Need additional help with your printer?</h2>
-          <p class="section-subtitle">Access comprehensive setup manuals, diagnostic fix guides, and technical software setup resources.</p>
+          <p class="section-subtitle">Find practical printer setup information, installation guidance, connection instructions, diagnostic checklists, and software resources in one place. Choose the guide that matches the stage of your printer setup or the issue you are currently experiencing.</p>
         </div>
 
-        <div class="support-cards-grid">
-          <!-- Column 1 -->
-          <div class="support-item-card">
-            <div>
-              <svg class="support-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-              <h3 class="support-card-title">Printer setup guides</h3>
-              <p class="support-card-desc">Comprehensive hardware unboxing, cartridge seating, paper tray loading, and Wi-Fi network configuration instructions.</p>
+        <div class="resource-directory-grid">
+          <!-- Resource 01 -->
+          <div class="resource-dir-item">
+            <div class="resource-dir-header">
+              <span class="resource-num">01</span>
+              <span class="resource-tag">PRINTER SETUP GUIDES</span>
             </div>
-            <a href="identify-printer.html" class="support-card-link">View setup guides &rarr;</a>
+            <h3 class="resource-title">Printer setup guides</h3>
+            <p class="resource-desc">Follow the complete setup process from identifying your printer model to preparing the hardware, installing the required software, connecting the printer, and completing a first test print.</p>
+            <ul class="resource-include-list">
+              <li>Identify your printer</li>
+              <li>Prepare the printer</li>
+              <li>Install printer software</li>
+              <li>Connect the printer</li>
+              <li>Complete the first test print</li>
+            </ul>
+            <a href="identify-printer.html" class="resource-cta-link">View setup guide &rarr;</a>
           </div>
 
-          <!-- Column 2 -->
-          <div class="support-item-card">
-            <div>
-              <svg class="support-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-              <h3 class="support-card-title">Diagnostic fix guide</h3>
-              <p class="support-card-desc">Step-by-step diagnostic solutions for printer offline status, print spooler errors, paper jams, and print quality alignment.</p>
+          <!-- Resource 02 -->
+          <div class="resource-dir-item">
+            <div class="resource-dir-header">
+              <span class="resource-num">02</span>
+              <span class="resource-tag">CONNECTION GUIDES</span>
             </div>
-            <a href="#fix-guide" class="support-card-link">Explore fix guide &rarr;</a>
+            <h3 class="resource-title">Connection guides</h3>
+            <p class="resource-desc">Get practical guidance for connecting your printer through supported connection methods and keeping the printer available to your device.</p>
+            <ul class="resource-include-list">
+              <li>Wi-Fi connection</li>
+              <li>USB connection</li>
+              <li>Network connection</li>
+              <li>Printer connection checks</li>
+              <li>Offline printer checks</li>
+            </ul>
+            <a href="identify-printer.html" class="resource-cta-link">View connection guides &rarr;</a>
           </div>
 
-          <!-- Column 3 -->
-          <div class="support-item-card">
-            <div>
-              <svg class="support-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-              <h3 class="support-card-title">Driver assistance &amp; help</h3>
-              <p class="support-card-desc">Identify your exact model number to download compatible software packages for Windows, macOS, and ChromeOS.</p>
+          <!-- Resource 03 -->
+          <div class="resource-dir-item">
+            <div class="resource-dir-header">
+              <span class="resource-num">03</span>
+              <span class="resource-tag">DIAGNOSTIC &amp; FIX GUIDES</span>
             </div>
-            <a href="identify-printer.html" class="support-card-link">Get setup help &rarr;</a>
+            <h3 class="resource-title">Diagnostic &amp; fix guides</h3>
+            <p class="resource-desc">Work through structured checks for common power, paper, ink or toner, connection, software, and printing problems before changing advanced settings.</p>
+            <ul class="resource-include-list">
+              <li>Printer not printing</li>
+              <li>Printer offline</li>
+              <li>Connection problems</li>
+              <li>Paper problems</li>
+              <li>Ink or toner checks</li>
+              <li>Print quality checks</li>
+            </ul>
+            <a href="#fix-guide" class="resource-cta-link">View fix guides &rarr;</a>
+          </div>
+
+          <!-- Resource 04 -->
+          <div class="resource-dir-item">
+            <div class="resource-dir-header">
+              <span class="resource-num">04</span>
+              <span class="resource-tag">SOFTWARE &amp; INSTALLATION</span>
+            </div>
+            <h3 class="resource-title">Software &amp; installation resources</h3>
+            <p class="resource-desc">Find information about printer software, driver installation, operating-system compatibility, installation preparation, and completing the printer setup process.</p>
+            <ul class="resource-include-list">
+              <li>Software installation</li>
+              <li>Driver setup</li>
+              <li>Operating-system setup</li>
+              <li>Installation preparation</li>
+              <li>First print verification</li>
+            </ul>
+            <a href="identify-printer.html" class="resource-cta-link">View software resources &rarr;</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- CORPORATE FOOTER -->
+  <!-- SITE FOOTER -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-brand-title">
-            <img src="assets/logo.png" alt="Printer Setup Logo" class="footer-logo-img">
+      <div class="footer-columns-grid">
+        <!-- COLUMN 01 — ABOUT -->
+        <div class="footer-col">
+          <span class="footer-col-eyebrow">ABOUT</span>
+          <h3 class="footer-col-title">Printer Setup</h3>
+          <p class="footer-about-text">A practical resource for printer installation, software setup, connection guidance, diagnostic checks, and everyday printing help.</p>
+        </div>
+
+        <!-- COLUMN 02 — POLICIES -->
+        <div class="footer-col">
+          <span class="footer-col-eyebrow">POLICIES</span>
+          <ul class="footer-links-list">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 03 — CONTACT -->
+        <div class="footer-col">
+          <span class="footer-col-eyebrow">CONTACT</span>
+          <div class="footer-contact-block">
+            <div class="footer-contact-item">
+              <span class="contact-label">Phone</span>
+              <a href="tel:85201477963" class="contact-value-link">85201477963</a>
+            </div>
+            <div class="footer-contact-item" style="margin-top: 8px;">
+              <span class="contact-label">Email</span>
+              <a href="mailto:hello@printerexpertshub.com" class="contact-value-link">hello@printerexpertshub.com</a>
+            </div>
+            <div class="footer-contact-item" style="margin-top: 8px;">
+              <span class="contact-label">Address</span>
+              <span class="contact-value-text" style="font-size: 0.85rem; color: #CCCCCC; display: block; line-height: 1.35;">30 N Gould Street, Suite R, Sheridan, WY 82801</span>
+            </div>
           </div>
-          <p class="footer-brand-desc">
-            Centralized independent printer driver and setup portal. Detailed step-by-step instructions for driver installation, wireless network configuration, hardware preparation, and print diagnostic fixes across all operating systems.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="footer-column-title">Printer setup</h4>
-          <ul class="footer-links">
-            <li><a href="identify-printer.html">Identify printer model</a></li>
-            <li><a href="identify-printer.html">Driver software packages</a></li>
-            <li><a href="#installation">Wireless Wi-Fi setup</a></li>
-            <li><a href="#setup-guide">Step-by-step setup manual</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-column-title">Fix &amp; diagnostic</h4>
-          <ul class="footer-links">
-            <li><a href="#fix-guide">8-step fix manual</a></li>
-            <li><a href="#fix-guide">Printer offline fix</a></li>
-            <li><a href="#fix-guide">Print spooler restart</a></li>
-            <li><a href="#fix-guide">Paper jam clearance</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-column-title">Information</h4>
-          <ul class="footer-links">
-            <li><a href="#">About portal</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Sitemap</a></li>
-          </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <div class="footer-disclaimer">
-          Independent printer setup and driver portal. Not affiliated with, authorized by, or endorsed by HP Inc. All product names, logos, trademarks, and registered brand images are property of their respective owners and used solely for identification.
-        </div>
-        <div>&copy; 2026 Printer Driver &amp; Setup Portal. All rights reserved.</div>
+      <!-- FOOTER BOTTOM BAR -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copy-text">&copy; 2026 Printer Setup</div>
+        <div class="footer-meta-text">Independent printer setup resource.</div>
       </div>
     </div>
   </footer>
 
+  <script src="js/site-config.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
