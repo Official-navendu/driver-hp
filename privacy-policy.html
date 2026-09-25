@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy | Printer Setup</title>
-  <meta name="description" content="Privacy Policy for PrinterSetupExperts. Learn how personal information is collected, used, and protected.">
+  <meta name="description" content="Privacy Policy for PrintersVault. Learn how personal information is collected, used, and protected.">
   <meta name="robots" content="index, follow">
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon/printer-favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/printer-favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/printer-favicon-180.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cookie-consent.css">
   <style>
     .policy-layout-grid {
       display: grid;
@@ -117,21 +118,29 @@
 </head>
 <body>
 
-  <!-- GLOBAL HEADER -->
+      <!-- GLOBAL HEADER (72px, Left: Logo, Right Aligned: Setup / Guide / Fix) -->
   <header class="site-header" id="site-header">
     <div class="container header-container">
       <a href="index.html" class="brand-logo" aria-label="Printer Setup Portal Home">
         <img src="assets/logo.png" alt="Printer Setup Logo" class="brand-logo-img">
       </a>
 
-      <nav class="nav-desktop" aria-label="Primary Navigation">
-        <a href="identify-printer.html" class="nav-link">Setup</a>
-        <a href="index.html#setup-guide" class="nav-link">Guide</a>
-        <a href="index.html#fix-guide" class="nav-link">Fix</a>
-      </nav>
+      <div class="nav-desktop" aria-label="Primary Navigation">
+        <span class="nav-item">
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v5"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+          <span>Setup</span>
+        </span>
+        <span class="nav-item">
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span>Guide</span>
+        </span>
+        <span class="nav-item">
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <span>Fix</span>
+        </span>
+      </div>
 
       <div class="header-actions">
-        <a href="identify-printer.html" class="btn btn-primary header-cta-desktop">Identify your printer &rarr;</a>
         <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-nav-menu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -142,11 +151,20 @@
       </div>
     </div>
 
+    <!-- Mobile Navigation Drawer -->
     <div class="mobile-nav" id="mobile-nav-menu">
-      <a href="identify-printer.html" class="nav-link">Setup</a>
-      <a href="index.html#setup-guide" class="nav-link">Guide</a>
-      <a href="index.html#fix-guide" class="nav-link">Fix</a>
-      <a href="identify-printer.html" class="btn btn-primary btn-full" style="margin-top: 1rem;">Identify your printer &rarr;</a>
+      <span class="nav-item">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v5"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+        <span>Setup</span>
+      </span>
+      <span class="nav-item">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <span>Guide</span>
+      </span>
+      <span class="nav-item">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        <span>Fix</span>
+      </span>
     </div>
   </header>
 
@@ -192,15 +210,15 @@
       <!-- POLICY CONTENT BODY -->
       <article class="policy-content-body">
         
-        <p>At PrinterSetupExperts, we respect your privacy and are committed to protecting the personal information you provide to us.</p>
-        <p>This Privacy Policy explains how PrinterSetupExperts ("we," "our," "us," or "PrinterSetupExperts") collects, uses, discloses, and protects information when you visit printersetupexperts.com, browse our products, create an account, place an order, contact us, or otherwise interact with our website.</p>
+        <p>At PrintersVault, we respect your privacy and are committed to protecting the personal information you provide to us.</p>
+        <p>This Privacy Policy explains how PrintersVault ("we," "our," "us," or "PrintersVault") collects, uses, discloses, and protects information when you visit PrintersVault.com, browse our products, create an account, place an order, contact us, or otherwise interact with our website.</p>
         <p>By using our website, you acknowledge the practices described in this Privacy Policy.</p>
 
         <h2 id="section-1">1. Information We Collect</h2>
         <p>We may collect information that you provide directly to us as well as certain information that is automatically collected when you use our website.</p>
         
         <h3>Personal Information You Provide</h3>
-        <p>Depending on how you interact with PrinterSetupExperts, we may collect:</p>
+        <p>Depending on how you interact with PrintersVault, we may collect:</p>
         <ul>
           <li>Full name</li>
           <li>Email address</li>
@@ -286,7 +304,7 @@
         </ul>
 
         <h2 id="section-4">4. Cookies and Similar Technologies</h2>
-        <p>PrinterSetupExperts may use cookies, pixels, tags, web beacons, and similar technologies to operate and improve our website.</p>
+        <p>PrintersVault may use cookies, pixels, tags, web beacons, and similar technologies to operate and improve our website.</p>
         <p>These technologies may help us:</p>
         <ul>
           <li>Remember your preferences</li>
@@ -304,7 +322,7 @@
         <p>For additional information, please review our Cookie Policy.</p>
 
         <h2 id="section-5">5. How We Share Information</h2>
-        <p>PrinterSetupExperts does not sell or rent your personal information for monetary consideration in the ordinary meaning of those terms.</p>
+        <p>PrintersVault does not sell or rent your personal information for monetary consideration in the ordinary meaning of those terms.</p>
         <p>We may share information with trusted third-party service providers when reasonably necessary to operate our business, process your order, provide services, protect our website, or comply with legal obligations.</p>
         <p>These service providers may assist with:</p>
         <ul>
@@ -333,17 +351,17 @@
         </ul>
 
         <h2 id="section-6">6. Sale or Sharing of Personal Information</h2>
-        <p>PrinterSetupExperts does not sell personal information for monetary consideration in the ordinary meaning of the term.</p>
+        <p>PrintersVault does not sell personal information for monetary consideration in the ordinary meaning of the term.</p>
         <p>However, certain U.S. privacy laws may define terms such as "sale," "sharing," or "targeted advertising" more broadly.</p>
         <p>If our use of advertising, analytics, or similar technologies is considered a regulated sale, sharing, or targeted advertising activity under an applicable law, we will provide any required disclosures and choices in accordance with that law.</p>
 
         <h2 id="section-7">7. Payment Information</h2>
-        <p>When you make a purchase through PrinterSetupExperts, payment information may be collected and processed by third-party payment processors.</p>
-        <p>PrinterSetupExperts does not intentionally store complete credit or debit card numbers on its own servers.</p>
+        <p>When you make a purchase through PrintersVault, payment information may be collected and processed by third-party payment processors.</p>
+        <p>PrintersVault does not intentionally store complete credit or debit card numbers on its own servers.</p>
         <p>Payment providers may process your information according to their own privacy and security practices.</p>
 
         <h2 id="section-8">8. Order and Transaction Information</h2>
-        <p>When you place an order with PrinterSetupExperts, we collect information necessary to process and fulfill your purchase.</p>
+        <p>When you place an order with PrintersVault, we collect information necessary to process and fulfill your purchase.</p>
         <p>This may include your:</p>
         <ul>
           <li>Name</li>
@@ -371,7 +389,7 @@
         <p>These organizations may process your information according to their own applicable privacy practices.</p>
 
         <h2 id="section-10">10. Marketing Communications</h2>
-        <p>Where permitted by applicable law, PrinterSetupExperts may send promotional communications about products, offers, promotions, new products, or other updates if you have subscribed, provided appropriate consent, or where another lawful basis applies.</p>
+        <p>Where permitted by applicable law, PrintersVault may send promotional communications about products, offers, promotions, new products, or other updates if you have subscribed, provided appropriate consent, or where another lawful basis applies.</p>
         <p>You may unsubscribe from promotional emails by using the unsubscribe link included in the communication.</p>
         <p>Even if you opt out of promotional communications, we may continue sending necessary non-promotional communications, including:</p>
         <ul>
@@ -423,7 +441,7 @@
         <p>We may need to verify your identity before completing certain requests.</p>
 
         <h2 id="section-14">14. United States Privacy Rights</h2>
-        <p>PrinterSetupExperts serves customers in the United States, and residents of certain states may have additional rights under applicable state privacy laws.</p>
+        <p>PrintersVault serves customers in the United States, and residents of certain states may have additional rights under applicable state privacy laws.</p>
         <p>Depending on the state in which you reside and whether the applicable law applies to our business, these rights may include rights relating to:</p>
         <ul>
           <li>Accessing personal information</li>
@@ -438,17 +456,17 @@
         <p>We will not unlawfully discriminate against you for exercising privacy rights available to you under applicable law.</p>
 
         <h2 id="section-15">15. Children's Privacy</h2>
-        <p>PrinterSetupExperts is intended for general consumers and is not directed toward children.</p>
+        <p>PrintersVault is intended for general consumers and is not directed toward children.</p>
         <p>We do not knowingly collect personal information from children in circumstances where applicable law requires parental consent.</p>
         <p>If you believe that a child has provided personal information to us in violation of applicable requirements, please contact us so that we can review the matter and take appropriate steps.</p>
 
         <h2 id="section-16">16. Third-Party Websites and Services</h2>
         <p>Our website may contain links to third-party websites, services, payment providers, manufacturers, or other external platforms.</p>
-        <p>PrinterSetupExperts does not control the privacy practices, content, security, or policies of independent third-party websites.</p>
+        <p>PrintersVault does not control the privacy practices, content, security, or policies of independent third-party websites.</p>
         <p>We encourage you to review the privacy policies and terms of any third-party website or service before providing personal information.</p>
 
         <h2 id="section-17">17. Business Transfers</h2>
-        <p>If PrinterSetupExperts or substantially all of its applicable business assets become involved in a merger, acquisition, restructuring, financing, sale of assets, reorganization, or similar business transaction, personal information may be transferred as part of that transaction where permitted by applicable law.</p>
+        <p>If PrintersVault or substantially all of its applicable business assets become involved in a merger, acquisition, restructuring, financing, sale of assets, reorganization, or similar business transaction, personal information may be transferred as part of that transaction where permitted by applicable law.</p>
         <p>Any such transfer will remain subject to applicable privacy requirements.</p>
 
         <h2 id="section-18">18. Changes to This Privacy Policy</h2>
@@ -466,9 +484,9 @@
         <h2 id="section-19">19. Contact Us</h2>
         <p>If you have questions about this Privacy Policy, our privacy practices, or your personal information, you can contact us at:</p>
         <p>
-          <strong>PrinterSetupExperts</strong><br>
+          <strong>PrintersVault</strong><br>
           Address: 30 N Gould Street, Suite R, Sheridan, WY 82801<br>
-          Email: <a href="mailto:hello@printerexpertshub.com" style="color: var(--color-blue);">hello@printerexpertshub.com</a>
+          Email: <a href="mailto:hello@printersvault.com" style="color: var(--color-blue);">hello@printersvault.com</a>
         </p>
 
       </article>
@@ -486,14 +504,22 @@
           <p class="footer-about-text">A practical resource for printer installation, software setup, connection guidance, diagnostic checks, and everyday printing help.</p>
         </div>
 
-        <div class="footer-col">
+                <div class="footer-col">
           <span class="footer-col-eyebrow">POLICIES</span>
-          <ul class="footer-links-list">
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="shipping-policy.html">Shipping Policy</a></li>
-            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-          </ul>
+          <div class="footer-policies-grid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px;">
+            <ul class="footer-links-list" style="margin:0; padding:0;">
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="shipping-policy.html">Shipping Policy</a></li>
+              <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+            <ul class="footer-links-list" style="margin:0; padding:0;">
+              <li><a href="refund-and-return-policy.html">Refund &amp; Return Policy</a></li>
+              <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+              <li><a href="cookie-policy.html">Cookie Policy</a></li>
+              <li><button type="button" class="cookie-settings-trigger">Cookie Settings</button></li>
+            </ul>
+          </div>
         </div>
 
         <div class="footer-col">
@@ -501,11 +527,11 @@
           <div class="footer-contact-block">
             <div class="footer-contact-item">
               <span class="contact-label">Phone</span>
-              <a href="tel:85201477963" class="contact-value-link">85201477963</a>
+              <a href="tel:+1 833-693-3171" class="contact-value-link">+1 833-693-3171</a>
             </div>
             <div class="footer-contact-item" style="margin-top: 8px;">
               <span class="contact-label">Email</span>
-              <a href="mailto:hello@printerexpertshub.com" class="contact-value-link">hello@printerexpertshub.com</a>
+              <a href="mailto:hello@printersvault.com" class="contact-value-link">hello@printersvault.com</a>
             </div>
             <div class="footer-contact-item" style="margin-top: 8px;">
               <span class="contact-label">Address</span>
@@ -516,7 +542,7 @@
       </div>
 
       <div class="footer-bottom-bar">
-        <div class="footer-copy-text">&copy; 2026 Printer Setup</div>
+        <div class="footer-copy-text">&copy; 2026 Printers Vault</div>
         <div class="footer-meta-text">Independent printer setup resource.</div>
       </div>
     </div>
@@ -524,5 +550,6 @@
 
   <script src="js/site-config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/cookie-consent.js"></script>
 </body>
 </html>

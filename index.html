@@ -10,24 +10,33 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/printer-favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/printer-favicon-180.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cookie-consent.css">
 </head>
 <body>
 
-  <!-- GLOBAL HEADER (72px, Left: Logo, Right: Setup / Guide / Fix) -->
+      <!-- GLOBAL HEADER (72px, Left: Logo, Right Aligned: Setup / Guide / Fix) -->
   <header class="site-header" id="site-header">
     <div class="container header-container">
       <a href="index.html" class="brand-logo" aria-label="Printer Setup Portal Home">
         <img src="assets/logo.png" alt="Printer Setup Logo" class="brand-logo-img">
       </a>
 
-      <nav class="nav-desktop" aria-label="Primary Navigation">
-        <a href="identify-printer.html" class="nav-link">Setup</a>
-        <a href="#setup-guide" class="nav-link">Guide</a>
-        <a href="#fix-guide" class="nav-link">Fix</a>
-      </nav>
+      <div class="nav-desktop" aria-label="Primary Navigation">
+        <span class="nav-item">
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v5"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+          <span>Setup</span>
+        </span>
+        <span class="nav-item">
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span>Guide</span>
+        </span>
+        <span class="nav-item">
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <span>Fix</span>
+        </span>
+      </div>
 
       <div class="header-actions">
-        <a href="identify-printer.html" class="btn btn-primary header-cta-desktop">Identify your printer &rarr;</a>
         <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-nav-menu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -40,10 +49,18 @@
 
     <!-- Mobile Navigation Drawer -->
     <div class="mobile-nav" id="mobile-nav-menu">
-      <a href="identify-printer.html" class="nav-link">Setup</a>
-      <a href="#setup-guide" class="nav-link">Guide</a>
-      <a href="#fix-guide" class="nav-link">Fix</a>
-      <a href="identify-printer.html" class="btn btn-primary btn-full" style="margin-top: 1rem;">Identify your printer &rarr;</a>
+      <span class="nav-item">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v5"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+        <span>Setup</span>
+      </span>
+      <span class="nav-item">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <span>Guide</span>
+      </span>
+      <span class="nav-item">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        <span>Fix</span>
+      </span>
     </div>
   </header>
 
@@ -80,7 +97,7 @@
     <div class="quick-nav-strip">
       <div class="container">
         <div class="quick-nav-grid">
-          <a href="identify-printer.html" class="quick-nav-item">
+          <a href="#setup-guide" class="quick-nav-item">
             <svg class="quick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
             <div class="quick-text-box">
               <h4>Printer setup <span class="arrow-link">&rarr;</span></h4>
@@ -88,7 +105,7 @@
             </div>
           </a>
 
-          <a href="identify-printer.html" class="quick-nav-item">
+          <a href="#installation" class="quick-nav-item">
             <svg class="quick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="12" y2="18"></line><line x1="15" y1="15" x2="12" y2="18"></line></svg>
             <div class="quick-text-box">
               <h4>Driver installation <span class="arrow-link">&rarr;</span></h4>
@@ -145,7 +162,6 @@
                   <li><strong>Network Configuration Report:</strong> Press and hold the Information button (i) or Wireless button to print a hardware status page detailing exact model name and IP address.</li>
                 </ul>
               </div>
-              <a href="identify-printer.html" class="step-action-link">Identify your printer model now &rarr;</a>
             </div>
             <div class="step-image-box">
               <div class="step-img-crop crop-front">
@@ -177,7 +193,6 @@
                   <li><strong>Load Paper Tray:</strong> Pull out the paper input tray, slide the width and length paper alignment guides outward, insert plain letter or A4 paper, and adjust guides snugly against the paper stack without bending edges.</li>
                 </ul>
               </div>
-              <a href="identify-printer.html" class="step-action-link">View hardware preparation guide &rarr;</a>
             </div>
           </div>
 
@@ -199,7 +214,6 @@
                   <li><strong>Firmware Update Utility:</strong> System updates that refine wireless network handshaking, security protocols, and internal printer engine performance.</li>
                 </ul>
               </div>
-              <a href="identify-printer.html" class="step-action-link">Get the software package &rarr;</a>
             </div>
             <div class="step-image-box">
               <div class="step-img-crop crop-full">
@@ -231,7 +245,6 @@
                   <li><strong>Print Alignment Test Page:</strong> After connection completes, print an alignment sheet to calibrate color heads and verify print quality.</li>
                 </ul>
               </div>
-              <a href="identify-printer.html" class="step-action-link">Explore connection instructions &rarr;</a>
             </div>
           </div>
         </div>
@@ -549,15 +562,6 @@
                 </div>
               </div>
             </div>
-
-            <div class="install-actions-flex">
-              <a href="identify-printer.html" class="btn btn-primary">
-                Get started &rarr;
-              </a>
-              <a href="identify-printer.html" class="btn btn-secondary">
-                View installation guide &rarr;
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -777,7 +781,6 @@
               <li>Connect the printer</li>
               <li>Complete the first test print</li>
             </ul>
-            <a href="identify-printer.html" class="resource-cta-link">View setup guide &rarr;</a>
           </div>
 
           <!-- Resource 02 -->
@@ -795,7 +798,6 @@
               <li>Printer connection checks</li>
               <li>Offline printer checks</li>
             </ul>
-            <a href="identify-printer.html" class="resource-cta-link">View connection guides &rarr;</a>
           </div>
 
           <!-- Resource 03 -->
@@ -814,7 +816,6 @@
               <li>Ink or toner checks</li>
               <li>Print quality checks</li>
             </ul>
-            <a href="#fix-guide" class="resource-cta-link">View fix guides &rarr;</a>
           </div>
 
           <!-- Resource 04 -->
@@ -832,7 +833,6 @@
               <li>Installation preparation</li>
               <li>First print verification</li>
             </ul>
-            <a href="identify-printer.html" class="resource-cta-link">View software resources &rarr;</a>
           </div>
         </div>
       </div>
@@ -851,14 +851,22 @@
         </div>
 
         <!-- COLUMN 02 — POLICIES -->
-        <div class="footer-col">
+                <div class="footer-col">
           <span class="footer-col-eyebrow">POLICIES</span>
-          <ul class="footer-links-list">
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="shipping-policy.html">Shipping Policy</a></li>
-            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-          </ul>
+          <div class="footer-policies-grid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px;">
+            <ul class="footer-links-list" style="margin:0; padding:0;">
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="shipping-policy.html">Shipping Policy</a></li>
+              <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+            <ul class="footer-links-list" style="margin:0; padding:0;">
+              <li><a href="refund-and-return-policy.html">Refund &amp; Return Policy</a></li>
+              <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+              <li><a href="cookie-policy.html">Cookie Policy</a></li>
+              <li><button type="button" class="cookie-settings-trigger">Cookie Settings</button></li>
+            </ul>
+          </div>
         </div>
 
         <!-- COLUMN 03 — CONTACT -->
@@ -867,11 +875,11 @@
           <div class="footer-contact-block">
             <div class="footer-contact-item">
               <span class="contact-label">Phone</span>
-              <a href="tel:85201477963" class="contact-value-link">85201477963</a>
+              <a href="tel:+1 833-693-3171" class="contact-value-link">+1 833-693-3171</a>
             </div>
             <div class="footer-contact-item" style="margin-top: 8px;">
               <span class="contact-label">Email</span>
-              <a href="mailto:hello@printerexpertshub.com" class="contact-value-link">hello@printerexpertshub.com</a>
+              <a href="mailto:hello@printersvault.com" class="contact-value-link">hello@printersvault.com</a>
             </div>
             <div class="footer-contact-item" style="margin-top: 8px;">
               <span class="contact-label">Address</span>
@@ -883,7 +891,7 @@
 
       <!-- FOOTER BOTTOM BAR -->
       <div class="footer-bottom-bar">
-        <div class="footer-copy-text">&copy; 2026 Printer Setup</div>
+        <div class="footer-copy-text">&copy; 2026 Printers Vault</div>
         <div class="footer-meta-text">Independent printer setup resource.</div>
       </div>
     </div>
@@ -891,5 +899,6 @@
 
   <script src="js/site-config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/cookie-consent.js"></script>
 </body>
 </html>

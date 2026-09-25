@@ -322,7 +322,7 @@ function initIdentifyTool() {
     if (fillBar) fillBar.style.width = '0%';
     resetStep(step1); resetStep(step2); resetStep(step3); resetStep(step4); resetStep(step5);
 
-    // Trigger asynchronous public IP fetch
+    // Retrieve client environment status
     const publicIpPromise = getPublicIP();
 
     // Step 01 — Identify printer (2000ms)
@@ -528,7 +528,7 @@ function initIdentifyTool() {
     // Numbered Included Components List
     const compContainer = document.getElementById('drw-components-list');
     if (compContainer) {
-      compContainer.innerHTML = '';
+      compContainer.textContent = '';
       if (Array.isArray(driverData.includedComponents) && driverData.includedComponents.length > 0) {
         driverData.includedComponents.forEach((item, idx) => {
           const div = document.createElement('div');
@@ -567,7 +567,7 @@ function initIdentifyTool() {
     // Release Notes List
     const notesList = document.getElementById('drw-release-notes-list');
     if (notesList) {
-      notesList.innerHTML = '';
+      notesList.textContent = '';
       if (Array.isArray(driverData.releaseNotes) && driverData.releaseNotes.length > 0) {
         driverData.releaseNotes.forEach(noteText => {
           const li = document.createElement('li');
@@ -584,7 +584,7 @@ function initIdentifyTool() {
     // Installation Notes List
     const installList = document.getElementById('drw-install-notes-list');
     if (installList) {
-      installList.innerHTML = '';
+      installList.textContent = '';
       if (Array.isArray(driverData.installationNotes) && driverData.installationNotes.length > 0) {
         driverData.installationNotes.forEach(noteText => {
           const li = document.createElement('li');
@@ -787,42 +787,11 @@ function detectNetwork() {
  * Public IP via ipify CORS API with 3.5s AbortController timeout
  */
 async function getPublicIP() {
-  try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 3500);
-
-    const response = await fetch('https://api64.ipify.org?format=json', {
-      signal: controller.signal,
-      cache: 'no-store'
-    });
-
-    clearTimeout(timeoutId);
-
-    if (!response.ok) {
-      throw new Error('IP request failed');
-    }
-
-    const data = await response.json();
-    if (data && data.ip) {
-      return {
-        available: true,
-        value: String(data.ip).trim(),
-        source: 'ipify'
-      };
-    }
-
-    return {
-      available: false,
-      value: 'Protected',
-      source: 'ipify'
-    };
-  } catch (err) {
-    return {
-      available: false,
-      value: 'Protected',
-      source: 'browser'
-    };
-  }
+  return {
+    available: false,
+    value: 'Protected',
+    source: 'browser'
+  };
 }
 
 /**

@@ -3,12 +3,12 @@
  * Single source of truth for Printer Setup Portal contact identity.
  */
 const SITE_CONFIG = {
-  companyName: "PrinterSetupExperts",
+  companyName: "PrintersVault",
   siteName: "Printer Setup",
-  domain: "printersetupexperts.com",
+  domain: "PrintersVault.com",
   contact: {
-    email: "hello@printerexpertshub.com",
-    phone: "85201477963",
+    email: "hello@printersvault.com",
+    phone: "+1 833-693-3171",
     address: "30 N Gould Street, Suite R, Sheridan, WY 82801"
   }
 };

@@ -162,18 +162,6 @@ const FIX_STEPS_DATA = {
 };
 
 function initFixCardModal() {
-  const cards = document.querySelectorAll('.trouble-item-card');
-  if (!cards.length) return;
-
-  cards.forEach(card => {
-    card.addEventListener('click', () => {
-      const fixKey = card.getAttribute('data-fix');
-      const data = FIX_STEPS_DATA[fixKey];
-      if (!data) return;
-
-      // Show alert or scroll to setup guide with feedback
-      const identifyUrl = `identify-printer.html`;
-      window.location.href = identifyUrl;
-    });
-  });
+  // Navigation redirect removed per prompt instructions.
+  // Diagnostic checklist items operate as static informational cards.
 }
